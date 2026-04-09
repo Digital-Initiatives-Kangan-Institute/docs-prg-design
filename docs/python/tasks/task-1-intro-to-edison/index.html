@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Task 1 - Intro to Edison - Programming & Design</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../extra/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Task 1 - Intro to Edison";
+        var mkdocs_page_input_path = "python/tasks/task-1-intro-to-edison.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Programming & Design
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Python</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Resources</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../resources/python-edison-intro/">Intro to Python & Edison</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Tasks</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Task 1 - Intro to Edison</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#11-analyse">1.1 Analyse</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-spin-right">1.2 Spin Right</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#13-increase-speed">1.3 Increase Speed</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Test</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Programming & Design</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Python</li>
+          <li class="breadcrumb-item">Tasks</li>
+      <li class="breadcrumb-item active">Task 1 - Intro to Edison</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="introduction-to-edison">Introduction to Edison</h1>
+<h2 id="11-analyse">1.1 Analyse</h2>
+<p>Copy the below code into EdPy. By reading the code have a guess at what the Edison will do. </p>
+<p>Download the code to your Edison and describe what the Edison does. Is it similar to what you guessed above? </p>
+<pre><code class="language-py">#-------------Setup----------------
+import Ed 
+
+Ed.EdisonVersion = Ed.V3 
+
+
+Ed.DistanceUnits = Ed.CM 
+Ed.Tempo = Ed.TEMPO_MEDIUM 
+
+
+#--------Your code below----------- import Ed
+
+Ed.EdisonVersion = Ed.V3
+Ed.DistanceUnits = Ed.CM
+Ed.Tempo = Ed.TEMPO_MEDIUM
+
+#--------Your code below-----------
+
+song=Ed.TuneString(23, &quot;c4,d6,e7,g4,f2&quot;)
+
+
+while True: 
+    Ed.PlayBeep() 
+    Ed.LeftLed(Ed.OFF) 
+    Ed.RightLed(Ed.ON) 
+
+#    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 350) 
+#    Ed.TimeWait(20, Ed.TIME_MILLISECONDS) 
+#    Ed.PlayBeep() 
+#    Ed.LeftLed(Ed.ON) 
+#    Ed.RightLed(Ed.OFF) 
+#    Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 350) 
+#    Ed.TimeWait(20, Ed.TIME_MILLISECONDS) 
+    Ed.Drive(Ed.FORWARD, 10, 20)
+    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 90)
+    Ed.PlayBeep() 
+    Ed.PlayTune(song)
+#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:
+#        pass
+    Ed.Drive(Ed.FORWARD, 10, 10)
+    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 90)
+    Ed.PlayBeep() 
+    Ed.PlayTune(song)
+#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:
+#        pass
+    Ed.Drive(Ed.FORWARD, 10, 20)
+    Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 90)
+    Ed.PlayBeep() 
+    Ed.PlayTune(song)
+#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:
+#        pass
+    Ed.Drive(Ed.FORWARD, 10, 10)
+    Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 90)
+    Ed.PlayBeep()  
+    Ed.PlayTune(song)
+#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:
+#        pass
+    Ed.Drive(Ed.FORWARD, 10, 20)
+    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 90)
+    Ed.PlayBeep() 
+    Ed.PlayTune(song)
+#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:
+#        pass
+    Ed.Drive(Ed.FORWARD, 10, 10)
+    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 90)
+    Ed.PlayBeep()  
+    Ed.PlayTune(song)
+#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:
+#        pass
+</code></pre>
+<p>Be mindful to maintain the lines and tabs (indentation) when pasting into the EdPy editor </p>
+<h2 id="12-spin-right">1.2 Spin Right</h2>
+<p>Edit the code so that the Edison only spins to the right.  Program the Edison and test. </p>
+<h2 id="13-increase-speed">1.3 Increase Speed</h2>
+<p>Edit the code again so that the Edison spins faster.  Program and observe the result. </p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../resources/python-edison-intro/" class="btn btn-neutral float-left" title="Intro to Python & Edison"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../.." class="btn btn-neutral float-right" title="Test">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../resources/python-edison-intro/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../.." style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

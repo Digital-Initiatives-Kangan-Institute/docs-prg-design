@@ -4,7 +4,7 @@ nav:
     - Resources:
       - Intro to Python & Edison: python/resources/python-edison-intro.md
     - Tasks:
-      - Task1: index.md
+      - Task 1 - Intro to Edison: python/tasks/task-1-intro-to-edison.md
 
   - Design:
     - Test: index.md
