@@ -32,7 +32,7 @@ To download a program onto the Edison:
 2. Press the ‘Program’ button in the upper right corner of the EdPy app
 3. In the pop-up window select ‘Edison V3 – Paired’ and click ‘Connect’
 
-### 1. Connect Edison to the computer using the USB cable
+### 1.5.1 Connect Edison to the computer using the USB cable
 ![Edison Plugged In](../assets/edison-plugged-50.jpg)
 
 ![Program Button](../assets/programbutton.png)
@@ -62,7 +62,7 @@ while True:
     Ed.TimeWait(20, Ed.TIME_MILLISECONDS)
 ```
 
-### Setup code  
+### 1.6.1 Setup code  
 All Edison programs must contain the setup code.  The Setup section tells the Edison how it should set itself up.  This means what version it is and what units it should use.  For example, should it measure distance in cm or seconds. 
 
 Line 2 of the setup code starts with a ‘#’ (hash) character. When a line starts with this character, it is called a ‘comment line.’ Any characters that come after the ‘#’ are ignored by the compiler. The text following after the # is used to document code so that other people can understand the program. Line 9 contains another comment line which will also be ignored by the EdPy compiler.  Comments are used to communicate with other programmers, not the computer. 
@@ -77,7 +77,7 @@ Line 2 of the setup code starts with a ‘#’ (hash) character. When a line sta
 
 - Line 7 defines the built-in Edison variable which relates to how fast or slow Edison plays a musical tune. See the documentation section for the different speeds that can be set. 
 
-### Instructional Code 
+### 1.6.2 Instructional Code 
 Lines 10 to 20 are telling the Edison to do something – giving the Edison instructions to perform.  Can you make a guess at what the Edison will do from reading the code? 
 
 Code is ideally written in a way that is understandable by reading it.  The above code is a fairly decent example. 
