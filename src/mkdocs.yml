@@ -1,4 +1,5 @@
 site_name: Programming & Design
+site_url: https://digital-initiatives-kangan-institute.github.io/ciii-programming-and-design-mkdocs
 nav:
   - Python:
     - Resources:
@@ -8,6 +9,23 @@ nav:
 
   - Design:
     - Test: index.md
-theme: readthedocs
-extra_css:
-  - extra/style.css
+
+theme:
+  name: material
+  palette:
+    primary: deep orange
+  features:
+    - toc.integrate 
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - header.hide
+
+extra:
+  generator: false
+copyright: Digital Initiatives - Bendigo Kangan Institute
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
