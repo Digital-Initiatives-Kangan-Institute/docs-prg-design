@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ./src
+mkdocs build
+rm -fr ../docs
+mv site ../docs

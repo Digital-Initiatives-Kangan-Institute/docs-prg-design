@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Intro to Python & Edison - Programming & Design</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../../extra/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Intro to Python \u0026 Edison";
+        var mkdocs_page_input_path = "python/resources/python-edison-intro.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Programming & Design
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Python</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Resources</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Intro to Python & Edison</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#11-why-python">1.1 Why Python?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#12-why-edison">1.2 Why Edison?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#13-what-do-we-need">1.3 What do we need?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#14-getting-to-know-the-edison">1.4 Getting to know the Edison</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#15-downloading-a-simple-program-to-the-edison">1.5 Downloading a simple program to the Edison</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-connect-edison-to-the-computer-using-the-usb-cable">1. Connect Edison to the computer using the USB cable</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#16-structure-of-an-edpy-program">1.6 Structure of an EdPy program</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#setup-code">Setup code</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#instructional-code">Instructional Code</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Tasks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../..">Task1</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Task1</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Programming & Design</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Python</li>
+          <li class="breadcrumb-item">Resources</li>
+      <li class="breadcrumb-item active">Intro to Python & Edison</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="introduction-to-python-and-edison-robot-v3">Introduction to Python and Edison Robot V3</h1>
+<p>Over the next ten weeks we will be learning the basics of programming. </p>
+<p>Then environments that we'll be utilising will be the Python programming language and the Edison V3 robot.  We'll also make use of a microcontroller environment called Wokwi towards the end.</p>
+<h2 id="11-why-python">1.1 Why Python?</h2>
+<p>Python is a great language to start learning programming because it is simple, readable, and widely used. Its clear, English-like syntax makes it easier for beginners to understand programming concepts without getting overwhelmed by complex rules. Python also has a huge community and countless free resources, meaning learners can quickly find tutorials, examples, and help when stuck. At the same time, it is powerful enough to be used in real-world applications such as web development, data science, artificial intelligence, and automation. This combination of simplicity and versatility makes Python both beginner-friendly and highly practical for future projects. </p>
+<h2 id="12-why-edison">1.2 Why Edison?</h2>
+<p>The Edison V3 robot is a great way to start learning programming because it combines simplicity with powerful, hands-on learning. Learners can write code that directly controls its sensors, motors, and outputs, making abstract concepts easy to understand through real-world results. It is affordable, durable, and easy to set up with USB charging and a built-in rechargeable battery, so the focus stays on coding rather than technical setup. With free resources, browser-based programming tools, and strong community support, Edison V3 provides an engaging and practical entry point into programming. </p>
+<p>Most importantly, hopefully it's going to be fun!</p>
+<h2 id="13-what-do-we-need">1.3 What do we need?</h2>
+<p>We'll provide you with an Edison robot during class time.
+To interface with the robot you'll need to go to:  https://www.edpyapp.com/v3/ 
+It's recommended that you use the Chrome browser to open the above coding environment. </p>
+<p>There are also video tutorials and a workbook that the Edison team have made available for you to use.  Feel free to use these but be aware that they are not an official part of the course. </p>
+<p>All classwork and assignments will be available via MSTeams.</p>
+<h2 id="14-getting-to-know-the-edison">1.4 Getting to know the Edison</h2>
+<p><img alt="Edison Sensors Top" src="../../assets/edison-sensors.png" /></p>
+<h2 id="15-downloading-a-simple-program-to-the-edison">1.5 Downloading a simple program to the Edison</h2>
+<p>The Edison is programmed via an editor which is found at <a href="https://www.edpyapp.com/v3/">https://www.edpyapp.com/v3/</a> (use Chrome to open). </p>
+<p>To download a program onto the Edison: </p>
+<ol>
+<li>Connect Edison to the computer using the USB cable  </li>
+<li>Press the ‘Program’ button in the upper right corner of the EdPy app</li>
+<li>In the pop-up window select ‘Edison V3 – Paired’ and click ‘Connect’</li>
+</ol>
+<h3 id="1-connect-edison-to-the-computer-using-the-usb-cable">1. Connect Edison to the computer using the USB cable</h3>
+<p><img alt="Edison Plugged In" src="../../assets/edison-plugged-50.jpg" /></p>
+<p><img alt="Program Button" src="../../assets/programbutton.png" /></p>
+<h2 id="16-structure-of-an-edpy-program">1.6 Structure of an EdPy program</h2>
+<p>Programming the Edison consists of two main parts.  The Setup part and the Instructional code.  Let's look at the code below which you'll use in Task 1. </p>
+<pre><code class="language-py">#-------------Setup----------------
+import Ed
+Ed.EdisonVersion = Ed.V3
+
+Ed.DistanceUnits = Ed.TIME
+Ed.Tempo = Ed.TEMPO_MEDIUM
+
+#--------Your code below-----------
+while True:
+    Ed.PlayBeep()
+    Ed.LeftLed(Ed.OFF)
+    Ed.RightLed(Ed.ON)
+    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 350)
+    Ed.TimeWait(20, Ed.TIME_MILLISECONDS)
+    Ed.PlayBeep()
+    Ed.LeftLed(Ed.ON)
+    Ed.RightLed(Ed.OFF)
+    Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 350)
+    Ed.TimeWait(20, Ed.TIME_MILLISECONDS)
+</code></pre>
+<h3 id="setup-code">Setup code</h3>
+<p>All Edison programs must contain the setup code.  The Setup section tells the Edison how it should set itself up.  This means what version it is and what units it should use.  For example, should it measure distance in cm or seconds. </p>
+<p>Line 2 of the setup code starts with a ‘#’ (hash) character. When a line starts with this character, it is called a ‘comment line.’ Any characters that come after the ‘#’ are ignored by the compiler. The text following after the # is used to document code so that other people can understand the program. Line 9 contains another comment line which will also be ignored by the EdPy compiler.  Comments are used to communicate with other programmers, not the computer. </p>
+<ul>
+<li>
+<p>Line 3 contains the ‘import’ command. This tells Python to ‘import’ another library of pre-written Python code. In line 4 of the setup, we are importing all the built-in Edison Python commands, in other words, all the EdPy commands. These built-in commands will all start with the prefix ‘Ed.’ and allow us to program the Edison robot in Python.  The import allows the compiler/computer to understand how to interface with the Edison robot.  </p>
+</li>
+<li>
+<p>Line 4 defines the built-in Edison variable that relates to the version of Edison you are using.  </p>
+</li>
+<li>
+<p>Look at the character sets in the sample code that are written in all capitals, such as V1, V2, CM and INCH. In Python, the convention is that any variable name written in all caps is a ‘constant’. Constants are variables that maintain the same value everywhere in your program and are used as a reference point throughout the program. EdPy has a range of helpful built-in constants.  These are similar to pre-defined settings that our program will use with the Edison. </p>
+</li>
+<li>
+<p>Line 6 defines the built-in Edison variable that relates to the distance units used by the robot: inches, cm or time (in seconds). If you want to use inches, you should change this line to: Ed.DistanceUnits = Ed.INCH If you are using an Edison V1, then you must select Ed.TIME for the distance units: Ed.DistanceUnits = Ed.TIME </p>
+</li>
+<li>
+<p>Line 7 defines the built-in Edison variable which relates to how fast or slow Edison plays a musical tune. See the documentation section for the different speeds that can be set. </p>
+</li>
+</ul>
+<h3 id="instructional-code">Instructional Code</h3>
+<p>Lines 10 to 20 are telling the Edison to do something – giving the Edison instructions to perform.  Can you make a guess at what the Edison will do from reading the code? </p>
+<p>Code is ideally written in a way that is understandable by reading it.  The above code is a fairly decent example. </p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../.." class="btn btn-neutral float-right" title="Task1">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="../../.." style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
