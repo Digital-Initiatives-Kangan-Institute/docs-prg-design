@@ -828,27 +828,52 @@ It's recommended that you use the Chrome browser to open the above coding enviro
 </code></pre></div></td></tr></table></div>
 <h3 id="161-setup-code">1.6.1 Setup code</h3>
 <p>All Edison programs must contain the setup code.  The Setup section tells the Edison how it should set itself up.  This means what version it is and what units it should use.  For example, should it measure distance in cm or seconds. </p>
-<p>Line 2 of the setup code starts with a ‘#’ (hash) character. When a line starts with this character, it is called a ‘comment line.’ Any characters that come after the ‘#’ are ignored by the compiler. The text following after the # is used to document code so that other people can understand the program. Line 9 contains another comment line which will also be ignored by the EdPy compiler.  Comments are used to communicate with other programmers, not the computer. </p>
 <ul>
 <li>
-<p>Line 3 contains the ‘import’ command. This tells Python to ‘import’ another library of pre-written Python code. In line 4 of the setup, we are importing all the built-in Edison Python commands, in other words, all the EdPy commands. These built-in commands will all start with the prefix ‘Ed.’ and allow us to program the Edison robot in Python.  The import allows the compiler/computer to understand how to interface with the Edison robot.  </p>
+<p>Line 1 of the setup code starts with a ‘#’ (hash) character. When a line starts with this character, it is called a ‘comment line.’ Any characters that come after the ‘#’ are ignored by the compiler. The text following after the # is used to document code so that other people can understand the program. Line 9 contains another comment line which will also be ignored by the EdPy compiler.  Comments are used to communicate with other programmers, not the computer. 
+<div class="highlight"><pre><span></span><code><span class="c1">#-------------Setup----------------#</span>
+</code></pre></div></p>
 </li>
 <li>
-<p>Line 4 defines the built-in Edison variable that relates to the version of Edison you are using.  </p>
+<p>Line 2 contains the ‘import’ command. This tells Python to ‘import’ another library of pre-written Python code. In line 4 of the setup, we are importing all the built-in Edison Python commands, in other words, all the EdPy commands. These built-in commands will all start with the prefix ‘Ed.’ and allow us to program the Edison robot in Python.  The import allows the compiler/computer to understand how to interface with the Edison robot.<br />
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">Ed</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Line 3 defines the built-in Edison variable that relates to the version of Edison you are using.<br />
+<div class="highlight"><pre><span></span><code><span class="n">Ed</span><span class="o">.</span><span class="n">EdisonVersion</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">V3</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Line 5 defines the built-in Edison variable that relates to the distance units used by the robot: inches, cm or time (in seconds). If you want to use inches, you should change this line to: Ed.DistanceUnits = Ed.INCH If you are using an Edison V1, then you must select Ed.TIME for the distance units: Ed.DistanceUnits = Ed.TIME 
+<div class="highlight"><pre><span></span><code><span class="n">Ed</span><span class="o">.</span><span class="n">DistanceUnits</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">TIME</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Line 6 defines the built-in Edison variable which relates to how fast or slow Edison plays a musical tune. See the documentation section for the different speeds that can be set. 
+<div class="highlight"><pre><span></span><code><span class="n">Ed</span><span class="o">.</span><span class="n">Tempo</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">TEMPO_MEDIUM</span>
+</code></pre></div></p>
 </li>
 <li>
 <p>Look at the character sets in the sample code that are written in all capitals, such as V1, V2, CM and INCH. In Python, the convention is that any variable name written in all caps is a ‘constant’. Constants are variables that maintain the same value everywhere in your program and are used as a reference point throughout the program. EdPy has a range of helpful built-in constants.  These are similar to pre-defined settings that our program will use with the Edison. </p>
 </li>
-<li>
-<p>Line 6 defines the built-in Edison variable that relates to the distance units used by the robot: inches, cm or time (in seconds). If you want to use inches, you should change this line to: Ed.DistanceUnits = Ed.INCH If you are using an Edison V1, then you must select Ed.TIME for the distance units: Ed.DistanceUnits = Ed.TIME </p>
-</li>
-<li>
-<p>Line 7 defines the built-in Edison variable which relates to how fast or slow Edison plays a musical tune. See the documentation section for the different speeds that can be set. </p>
-</li>
 </ul>
 <h3 id="162-instructional-code">1.6.2 Instructional Code</h3>
-<p>Lines 10 to 20 are telling the Edison to do something – giving the Edison instructions to perform.  Can you make a guess at what the Edison will do from reading the code? </p>
-<p>Code is ideally written in a way that is understandable by reading it.  The above code is a fairly decent example. </p>
+<p>Lines 9-19 are telling the Edison to do something – giving the Edison instructions to perform.  Can you make a guess at what the Edison will do from reading the code? </p>
+<div class="highlight"><pre><span></span><code><span class="c1">#--------Your code below-----------</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">LeftLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">OFF</span><span class="p">)</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">RightLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">ON</span><span class="p">)</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">350</span><span class="p">)</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">TimeWait</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">TIME_MILLISECONDS</span><span class="p">)</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">LeftLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">ON</span><span class="p">)</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">RightLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">OFF</span><span class="p">)</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_LEFT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">350</span><span class="p">)</span>
+    <span class="n">Ed</span><span class="o">.</span><span class="n">TimeWait</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">TIME_MILLISECONDS</span><span class="p">)</span>
+</code></pre></div>
+<p>Code is ideally written in a way that is understandable by reading it. The above code is a fairly decent example. </p>
 
 
 
