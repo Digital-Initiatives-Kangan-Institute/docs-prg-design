@@ -23,6 +23,7 @@ theme:
     - navigation.footer
     - header.hide
     - content.code.copy
+    - content.code.annotate
 
 plugins:
   - enumerate-headings:
@@ -41,3 +42,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
