@@ -22,6 +22,7 @@ theme:
     - navigation.path
     - navigation.footer
     - header.hide
+    - content.code.copy
 
 plugins:
   - enumerate-headings:
@@ -36,4 +37,7 @@ copyright: Digital Initiatives - Bendigo Kangan Institute
 markdown_extensions:
   - pymdownx.highlight:
       linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
