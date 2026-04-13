@@ -1,8 +1,9 @@
 # Task 2 - Variables
+For each of the tasks below, **copy** the code into **EdPy** and follow the instructions.
 
 ## Fixing Code
-!!! abstract "Task - Fixing Code"
-    The code below doesn't quite work. Copy the code into EdPy. Add a variable to line 12 to make it work.
+!!! abstract "Instructions"
+    The code below doesn't quite work. Add a variable to line 12 to make it work.
 
 ??? example "Code - Click to expand"
     ```py
@@ -85,7 +86,7 @@
     The name of the variable has to match something on line 13.
 
 ## Variable Names
-!!! abstract "Task - Variable Names"
+!!! abstract "Instructions"
     Complete the code below. Read the code and use the variable names to determine what to do:
 
 ??? example "Code - Click to expand"
@@ -169,5 +170,5 @@
     ```
 
 ## Square Driving
-!!! abstract "Task - Square Driving"
+!!! abstract "Instructions"
     Using variables to set the `length`, `angle` and `speed` – create a program that moves the Edison in a _square_.

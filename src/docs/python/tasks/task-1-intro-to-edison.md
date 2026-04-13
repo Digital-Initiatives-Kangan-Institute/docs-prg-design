@@ -1,7 +1,9 @@
 # Task 1 - Introduction to Edison
+For each of the tasks below, **copy** the code into **EdPy** and follow the instructions.
+
 ## Analyse
-!!! abstract "Task - Analyse"
-    Copy the below code into EdPy. By reading the code have a guess at what the Edison will do. 
+!!! abstract "Instructions"
+    By reading the code have a guess at what the Edison will do. 
 
     Download the code to your Edison and describe what the Edison does. Is it similar to what you guessed above? 
 
@@ -81,9 +83,9 @@
     ```
 
 ## Spin Right
-!!! abstract "Task - Spin Right"
-    Edit the code so that the Edison only spins to the right.  Program the Edison and test. 
+!!! abstract "Instructions"
+    Edit the code so that the Edison only spins to the right. Program the Edison and test. 
 
 ## Increase Speed
-!!! abstract "Task - Increase Speed"
-    Edit the code again so that the Edison spins faster.  Program and observe the result. 
+!!! abstract "Instructions"
+    Edit the code again so that the Edison spins faster. Program and observe the result. 

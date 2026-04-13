@@ -1,7 +1,8 @@
 # Functions
+For each of the tasks below, **copy** the code into **EdPy** and follow the instructions.
 
 ## Beeping
-!!! abstract "Task - Run Functions"
+!!! abstract "Instructions"
     Complete the code below so that the Edison beeps 3 times.
 
 ??? example "Code - Click to expand"
@@ -25,7 +26,7 @@
     ```
 
 ## Run Function
-!!! abstract "Task - Run Functions"
+!!! abstract "Instructions"
     Complete the code below so that it executes the function as intended.
 
 ??? example "Code - Click to expand"
@@ -51,7 +52,7 @@
     ```
 
 ## Triangles
-!!! abstract "Task - Triangles"
+!!! abstract "Instructions"
     Fix the code below to draw two triangles.
 
 ??? example "Code - Click to expand"
@@ -81,7 +82,7 @@
     ```
 
 ## Drawing a Square
-!!! abstract "Task - Drawing a Square"
+!!! abstract "Instructions"
     Create a function called `forward_left()`.  This functions moves the Edison 10cm forwards and then spins to the left 90 degrees. 
 
     Create a second function called `draw_square()`. Draw square will use `forward_left()` to draw a square. 
