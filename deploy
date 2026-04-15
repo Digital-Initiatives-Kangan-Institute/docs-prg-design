@@ -6,3 +6,4 @@ mv site ../docs
 
 git add ../docs
 git commit -am "Update GH Pages build."
+git push
