@@ -1,6 +1,7 @@
 site_name: Design
 site_url: https://design-docs.netlify.app
 nav:
+  - Return to Portal: https://robocoportal.netlify.app/
   - Home: index.md
 
 theme:

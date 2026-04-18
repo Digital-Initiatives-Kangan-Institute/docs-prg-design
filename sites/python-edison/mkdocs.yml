@@ -1,6 +1,7 @@
 site_name: Python Edison
 site_url: https://python-edison.netlify.app
 nav:
+  - Return to Portal: https://robocoportal.netlify.app/
   - Python:
     - Resources:
       - Intro to Python & Edison: python/resources/python-edison-intro.md
