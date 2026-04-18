@@ -4,6 +4,14 @@ Each page is built using `markdown` and is empowered using `material` for `mkdoc
 
 Before creating any pages it's important to know how to utilize the extra features provided by `material`.
 
+## Sites
+This repository contains multiple mkdocs sites:
+- **Site Portal** - Contains links to the sites (sites/portal)
+- **Design Thinking** (sites/design)
+- **Python / Edison Programming** (sites/python-edison)
+
+When authoring these sites it is important that you use the `serve` and `deploy` bash scripts to manage them.
+
 ## Creating a new page
 To create a new page you need to create a markdown file and then add it to the `mkdocs` navigation menu.
 All pages must be created inside of the `sites/<SITE-NAME>/docs` folder.
