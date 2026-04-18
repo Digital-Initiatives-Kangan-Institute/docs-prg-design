@@ -20,6 +20,8 @@ extra:
   generator: false
 copyright: Digital Initiatives - Bendigo Kangan Institute
 
+plugins: []
+
 markdown_extensions:
   - pymdownx.highlight:
       linenums: true
