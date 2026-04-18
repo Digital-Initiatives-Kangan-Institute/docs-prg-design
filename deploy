@@ -1,9 +1,60 @@
 #!/bin/bash
-cd ./src
-mkdocs build
-rm -fr ../docs
-mv site ../docs
 
-git add ../docs
-git commit -am "Update GH Pages build."
+SITES_DIR="./sites"
+OUTPUT_DIR="./docs"
+
+# Check sites directory exists
+if [ ! -d "$SITES_DIR" ]; then
+  echo "Error: '$SITES_DIR' directory not found."
+  exit 1
+fi
+
+# Get list of directories in sites/
+sites=()
+while IFS= read -r -d '' dir; do
+  sites+=("$(basename "$dir")")
+done < <(find "$SITES_DIR" -mindepth 1 -maxdepth 1 -type d -print0 | sort -z)
+
+if [ ${#sites[@]} -eq 0 ]; then
+  echo "Error: No sites found in '$SITES_DIR'."
+  exit 1
+fi
+
+# Prompt user to pick a site
+echo "Which site do you want to deploy?"
+echo ""
+for i in "${!sites[@]}"; do
+  echo "  $((i + 1))) ${sites[$i]}"
+done
+echo ""
+read -rp "Enter number [1-${#sites[@]}]: " choice
+
+# Validate input
+if ! [[ "$choice" =~ ^[0-9]+$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt ${#sites[@]} ]; then
+  echo "Error: Invalid selection."
+  exit 1
+fi
+
+selected="${sites[$((choice - 1))]}"
+site_path="$SITES_DIR/$selected"
+
+echo ""
+echo "Deploying '$selected'..."
+echo ""
+
+# Build
+cd "$site_path" || exit 1
+mkdocs build
+
+# Copy to output dir
+cd - > /dev/null || exit 1
+rm -rf "$OUTPUT_DIR"
+mv "$site_path/site" "$OUTPUT_DIR"
+
+# Commit and push
+git add "$OUTPUT_DIR"
+git commit -am "Update Pages build: $selected"
 git push
+
+echo ""
+echo "Done! '$selected' deployed successfully."
