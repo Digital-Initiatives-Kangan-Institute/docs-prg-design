@@ -25,6 +25,9 @@ theme:
 extra:
   generator: false
 
+extra_css:
+  - extra/style.css
+
 plugins: []
 
 markdown_extensions:
