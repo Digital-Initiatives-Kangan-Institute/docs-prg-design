@@ -1,0 +1,40 @@
+site_name: Design
+site_url: https://design-docs.netlify.app
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  palette:
+    primary: light blue
+  features:
+    - toc.integrate 
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - header.hide
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - enumerate-headings:
+      increment_across_pages: true
+      restart_increment_after: 
+        - python/tasks/task-1-intro-to-edison.md
+
+extra:
+  generator: false
+copyright: Digital Initiatives - Bendigo Kangan Institute
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - extra/style.css

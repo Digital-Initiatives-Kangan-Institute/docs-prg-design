@@ -1,5 +1,5 @@
-site_name: Programming & Design
-site_url: https://digital-initiatives-kangan-institute.github.io/docs-prg-design
+site_name: Python Edison
+site_url: https://python-edison.netlify.app
 nav:
   - Python:
     - Resources:
