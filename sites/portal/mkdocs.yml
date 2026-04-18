@@ -1,0 +1,34 @@
+site_name: Programming & Design
+site_url: https://robocoportal.netlify.app
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  palette:
+    primary: deep orange
+  features:
+    - toc.integrate 
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - header.hide
+    - content.code.copy
+    - content.code.annotate
+
+extra:
+  generator: false
+copyright: Digital Initiatives - Bendigo Kangan Institute
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - extra/style.css
