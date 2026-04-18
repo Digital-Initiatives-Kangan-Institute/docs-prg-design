@@ -11,8 +11,8 @@ nav:
 
   - Design Thinking:
     - Resources:
-      - 3D Printing Intro: design/resources/3d-printing-intro.md
-      - FDM Printing: design/resources/fdm-printing.md
+      - 3D Printing Introduction: design/resources/3d-printing-intro.md
+      - Fused Deposition Modeling (FDM) Printing: design/resources/fdm-printing.md
       - Design Thinking - Double Diamond: design/resources/design-thinking-double-diamond.md
       - Double Diamond - Develop and Deliver: design/resources/double-diamond-develop-deliver.md
       - Miro - Visual Collaboration Platform: design/resources/miro.md
