@@ -1,4 +1,4 @@
-site_name: Programming & Design
+site_name: Digital Initiatives MkDocs Portal
 site_url: https://robocoportal.netlify.app
 nav:
   - Home: index.md
@@ -6,7 +6,7 @@ nav:
 theme:
   name: material
   palette:
-    primary: deep orange
+    primary: deep purple
   features:
     - toc.integrate 
     - navigation.sections
