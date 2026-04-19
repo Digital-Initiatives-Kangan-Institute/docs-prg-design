@@ -3,35 +3,41 @@
 SITES_DIR="./sites"
 OUTPUT_BASE="./output"
 
-# Check sites directory exists
+# ── Colours ───────────────────────────────────
+RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'
+CYAN='\033[0;36m'; BOLD='\033[1m'; RESET='\033[0m'
+
+print_step()    { echo -e "${BOLD}${CYAN}▸ $1${RESET}"; }
+print_success() { echo -e "${GREEN}✔  $1${RESET}"; }
+print_error()   { echo -e "${RED}✖  $1${RESET}" >&2; }
+
+# ── Check sites directory exists ──────────────
 if [ ! -d "$SITES_DIR" ]; then
-  echo "Error: '$SITES_DIR' directory not found."
+  print_error "'$SITES_DIR' directory not found."
   exit 1
 fi
 
-# Get list of directories in sites/
+# ── Get list of sites ─────────────────────────
 sites=()
 while IFS= read -r -d '' dir; do
   sites+=("$(basename "$dir")")
 done < <(find "$SITES_DIR" -mindepth 1 -maxdepth 1 -type d -print0 | sort -z)
 
 if [ ${#sites[@]} -eq 0 ]; then
-  echo "Error: No sites found in '$SITES_DIR'."
+  print_error "No sites found in '$SITES_DIR'."
   exit 1
 fi
 
-# Prompt user to pick a site
-echo "Which site do you want to deploy?"
-echo ""
+# ── Pick a site ───────────────────────────────
+echo -e "\n${BOLD}Which site do you want to deploy?${RESET}\n"
 for i in "${!sites[@]}"; do
-  echo "  $((i + 1))) ${sites[$i]}"
+  echo -e "  ${CYAN}$((i + 1)))${RESET} ${sites[$i]}"
 done
 echo ""
-read -rp "Enter number [1-${#sites[@]}]: " choice
+read -rp "$(echo -e "${BOLD}Enter number [1-${#sites[@]}]:${RESET} ")" choice
 
-# Validate input
 if ! [[ "$choice" =~ ^[0-9]+$ ]] || [ "$choice" -lt 1 ] || [ "$choice" -gt ${#sites[@]} ]; then
-  echo "Error: Invalid selection."
+  print_error "Invalid selection."
   exit 1
 fi
 
@@ -39,26 +45,48 @@ selected="${sites[$((choice - 1))]}"
 site_path="$SITES_DIR/$selected"
 OUTPUT_DIR="$OUTPUT_BASE/$selected"
 
+# ── Commit message ────────────────────────────
 echo ""
-echo "Deploying '$selected'..."
+read -rp "$(echo -e "${BOLD}Commit message:${RESET} ")" commit_message
+commit_message="$(echo "$commit_message" | sed 's/^ *//; s/ *$//')"
+
+if [ -z "$commit_message" ]; then
+  print_error "Commit message cannot be empty."
+  exit 1
+fi
+
+echo ""
+print_step "Deploying '$selected'..."
 echo ""
 
-# Ensure output directory exists
+# ── Build ─────────────────────────────────────
 mkdir -p "$OUTPUT_DIR"
 
-# Build
 cd "$site_path" || exit 1
 mkdocs build
-
-# Copy to output dir
 cd - > /dev/null || exit 1
+
+print_success "Site built"
+
+# ── Move build output ─────────────────────────
 rm -rf "$OUTPUT_DIR"
 mv "$site_path/site" "$OUTPUT_DIR"
 
-# Commit and push
+print_success "Build output moved to $OUTPUT_DIR"
+
+# ── Stage site source + build output ─────────
+git add "$site_path"
 git add "$OUTPUT_DIR"
-git commit -am "Build: $selected"
+
+# ── Commit & push ─────────────────────────────
+git commit -m "$commit_message"
 git push
 
 echo ""
-echo "Done! '$selected' deployed successfully."
+echo -e "${BOLD}${GREEN}╔══════════════════════════════════════╗${RESET}"
+echo -e "${BOLD}${GREEN}║   Deployed successfully! 🚀          ║${RESET}"
+echo -e "${BOLD}${GREEN}╚══════════════════════════════════════╝${RESET}"
+echo -e "
+  ${BOLD}Site:${RESET}     $selected
+  ${BOLD}Commit:${RESET}   $commit_message
+"

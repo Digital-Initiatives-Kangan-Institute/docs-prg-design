@@ -12,6 +12,9 @@ This repository contains multiple mkdocs sites:
 
 When authoring these sites it is important that you use the `serve` and `deploy` bash scripts to manage them.
 
+## Creating a site
+To create a new site you must use the `create` script. This is a site creation wizard that will manage setting up the basic site structure for you.
+
 ## Creating a new page
 To create a new page you need to create a markdown file and then add it to the `mkdocs` navigation menu.
 All pages must be created inside of the `sites/<SITE-NAME>/docs` folder.
