@@ -129,6 +129,18 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../resources/edpy-environment/">
+<span class="md-ellipsis">
+    
+  
+    EdPy - Programming Environment
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../resources/python-edison-intro/">
 <span class="md-ellipsis">
     
@@ -194,6 +206,18 @@
     
   
     Selection in the Event Loop
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../resources/edpy-video-tutorials/">
+<span class="md-ellipsis">
+    
+  
+    EdPy - Video Tutorials
   
 
     
@@ -396,7 +420,7 @@
 <nav aria-label="Navigation" class="md-path">
 <ol class="md-path__list">
 <li class="md-path__item">
-<a class="md-path__link" href="../../resources/python-edison-intro/">
+<a class="md-path__link" href="../../resources/edpy-environment/">
 <span class="md-ellipsis">
     Python
   </span>
@@ -433,67 +457,7 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">#-------------Setup----------------</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">#-------------Setup----------------</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">Ed</span>
 
@@ -506,66 +470,6 @@
 <span class="n">length</span> <span class="o">=</span> <span class="mi">10</span>
 
 <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="n">speed</span><span class="p">,</span> <span class="n">length</span><span class="p">)</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">Ed</span>
-
-
-<span class="n">Ed</span><span class="o">.</span><span class="n">EdisonVersion</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">V3</span>
-<span class="n">Ed</span><span class="o">.</span><span class="n">DistanceUnits</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">CM</span>
-<span class="n">Ed</span><span class="o">.</span><span class="n">Tempo</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">TEMPO_MEDIUM</span>
-
-<span class="c1">#--------Your code below-----------</span>
-
-<span class="n">song</span><span class="o">=</span><span class="n">Ed</span><span class="o">.</span><span class="n">TuneString</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span> <span class="s2">"c4,d6,e7,g4,f2"</span><span class="p">)</span>
-
-
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">LeftLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">OFF</span><span class="p">)</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">RightLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">ON</span><span class="p">)</span> 
-
-<span class="c1">#    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 350) </span>
-<span class="c1">#    Ed.TimeWait(20, Ed.TIME_MILLISECONDS) </span>
-<span class="c1">#    Ed.PlayBeep() </span>
-<span class="c1">#    Ed.LeftLed(Ed.ON) </span>
-<span class="c1">#    Ed.RightLed(Ed.OFF) </span>
-<span class="c1">#    Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 350) </span>
-<span class="c1">#    Ed.TimeWait(20, Ed.TIME_MILLISECONDS) </span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_LEFT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_LEFT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span>  
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span>  
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
 </code></pre></div></td></tr></table></div>
 </details>
 <details class="tip">
@@ -595,66 +499,7 @@
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span>
-<span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">Ed</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">Ed</span>
 
 <span class="n">Ed</span><span class="o">.</span><span class="n">EdisonVersion</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">V3</span>
 
@@ -671,65 +516,6 @@
 <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="n">difference</span><span class="p">)</span>
 <span class="n">Ed</span><span class="o">.</span><span class="n">TimeWait</span><span class="p">(</span><span class="n">length_2</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">TIME_SECONDS</span><span class="p">)</span>
 <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="n">product</span><span class="p">)</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">Ed</span>
-
-<span class="n">Ed</span><span class="o">.</span><span class="n">EdisonVersion</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">V3</span>
-<span class="n">Ed</span><span class="o">.</span><span class="n">DistanceUnits</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">CM</span>
-<span class="n">Ed</span><span class="o">.</span><span class="n">Tempo</span> <span class="o">=</span> <span class="n">Ed</span><span class="o">.</span><span class="n">TEMPO_MEDIUM</span>
-
-<span class="c1">#--------Your code below-----------</span>
-
-<span class="n">song</span><span class="o">=</span><span class="n">Ed</span><span class="o">.</span><span class="n">TuneString</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span> <span class="s2">"c4,d6,e7,g4,f2"</span><span class="p">)</span>
-
-
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">LeftLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">OFF</span><span class="p">)</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">RightLed</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">ON</span><span class="p">)</span> 
-
-<span class="c1">#    Ed.Drive(Ed.SPIN_RIGHT, Ed.SPEED_5, 350) </span>
-<span class="c1">#    Ed.TimeWait(20, Ed.TIME_MILLISECONDS) </span>
-<span class="c1">#    Ed.PlayBeep() </span>
-<span class="c1">#    Ed.LeftLed(Ed.ON) </span>
-<span class="c1">#    Ed.RightLed(Ed.OFF) </span>
-<span class="c1">#    Ed.Drive(Ed.SPIN_LEFT, Ed.SPEED_5, 350) </span>
-<span class="c1">#    Ed.TimeWait(20, Ed.TIME_MILLISECONDS) </span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_LEFT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_LEFT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span>  
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span> 
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">FORWARD</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayBeep</span><span class="p">()</span>  
-    <span class="n">Ed</span><span class="o">.</span><span class="n">PlayTune</span><span class="p">(</span><span class="n">song</span><span class="p">)</span>
-<span class="c1">#    while Ed.ReadMusicEnd() == Ed.MUSIC_NOT_FINISHED:</span>
-<span class="c1">#        pass</span>
 </code></pre></div></td></tr></table></div>
 </details>
 <h2 id="square-driving"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3</span> Square Driving</h2>

@@ -129,6 +129,18 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../edpy-environment/">
+<span class="md-ellipsis">
+    
+  
+    EdPy - Programming Environment
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../python-edison-intro/">
 <span class="md-ellipsis">
     
@@ -250,6 +262,18 @@
     
   
     Selection in the Event Loop
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../edpy-video-tutorials/">
+<span class="md-ellipsis">
+    
+  
+    EdPy - Video Tutorials
   
 
     
@@ -405,14 +429,14 @@
 <nav aria-label="Navigation" class="md-path">
 <ol class="md-path__list">
 <li class="md-path__item">
-<a class="md-path__link" href="../python-edison-intro/">
+<a class="md-path__link" href="../edpy-environment/">
 <span class="md-ellipsis">
     Python
   </span>
 </a>
 </li>
 <li class="md-path__item">
-<a class="md-path__link" href="../python-edison-intro/">
+<a class="md-path__link" href="../edpy-environment/">
 <span class="md-ellipsis">
     Resources
   </span>
@@ -421,17 +445,17 @@
 </ol>
 </nav>
 <article class="md-content__inner md-typeset">
-<h1 id="python-functions"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.</span> Python Functions</h1>
+<h1 id="python-functions"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.</span> Python Functions</h1>
 <p>Functions are a core concept of programming. Functions allow us to group code together and tag that code with a name. This allows us to reuse code and avoid repeating ourselves.</p>
 <p>Functions also break up our code into smaller, more manageable pieces. This is important for debugging and testing. Functions also allow us to create libraries of code that we can use in other programs. This is important for sharing code and collaborating with others. It can be useful to think of functions as mini-programs that we can call from of main program when we need them.</p>
-<h2 id="calling-a-function"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1</span> Calling a Function</h2>
+<h2 id="calling-a-function"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.1</span> Calling a Function</h2>
 <p>We can then <strong>call</strong> that function. Calling a function means executing the code that was grouped together. Importantly, we can call the same function many times.</p>
 <p>We have already used functions previously. For example, the <code>Ed.Drive()</code> function is a built-in function. Python has already grouped together or, <strong>defined</strong>, the code that prints to the screen. We then call the <code>Ed.Drive()</code> function thus executing some predefined code.</p>
 <p>Notice that <code>Ed.Drive()</code> has brackets/parenthesis <code>()</code> after it. This part of the syntax of calling a function. The brackets are used to pass in any information that the function needs to do its job. For example, the <code>Ed.Drive()</code> function needs to know; type of movement, speed and amount. We can pass this information in as follows:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Ed</span><span class="o">.</span><span class="n">Drive</span><span class="p">(</span><span class="n">Ed</span><span class="o">.</span><span class="n">SPIN_RIGHT</span><span class="p">,</span> <span class="n">Ed</span><span class="o">.</span><span class="n">SPEED_5</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span> 
 </code></pre></div></td></tr></table></div>
 <p>What are some other built-in functions? That we have used?</p>
-<h2 id="defining-a-function"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.2</span> Defining a Function</h2>
+<h2 id="defining-a-function"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.2</span> Defining a Function</h2>
 <p>We can also define our own functions. This is done using the def keyword. Like other control structures in Python, we add a colon : to the end of the line and indented lines below belong to the structure. The syntax is as follows:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">function_name</span><span class="p">():</span> 
@@ -496,7 +520,7 @@
 <p>Functions can be called multiple times which saves a us replicating the code used every time the function is called. In the above the Edison will do <code>small_dance()</code> twice, but the code for <code>small_dance()</code> only needs to written once (<code>lines 11–14</code>).</p>
 <p>Does a function need to be defined before it is called? Why?</p>
 <p><a class="md-button" href="../../tasks/task-3-functions/">Attempt Task 3</a></p>
-<h2 id="parameters"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3</span> Parameters</h2>
+<h2 id="parameters"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.3</span> Parameters</h2>
 <p>Functions can also take in information. This is done by adding parameters to the function definition. Think of parameters as the inputs to our mini-programs. Parameters are variables that are passed into the function when it is called. This allows us to make our functions more flexible and reusable. The syntax for adding parameters is as follows:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">function_name</span><span class="p">(</span><span class="n">parameter1</span><span class="p">,</span> <span class="n">parameter2</span><span class="p">):</span> 
@@ -530,7 +554,7 @@
 <span class="n">small_dance</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="mi">360</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p><a class="md-button" href="../../tasks/task-4-functions-params-returns/">Attempt Task 4</a></p>
-<h2 id="output-returning-values"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.4</span> Output - Returning Values</h2>
+<h2 id="output-returning-values"><span class="enumerate-headings-plugin enumerate-heading-plugin">4.4</span> Output - Returning Values</h2>
 <p>Just like a program a function can have an output. This is done using the <strong>return</strong> keyword. The <strong>return</strong> keyword is used to output a value from a function. This can be thought of as a signal or message being sent back to where the function was called. </p>
 <p>This allows us to use or store the result of a function to use later.  </p>
 <p>An example of this in a pre-built function is the <code>Ed.ReadKeypad()</code> function. <code>Ed.ReadKeypad()</code> detects if any buttons on the Edison are pressed. It returns a key value if something is pressed or <code>NONE</code> if nothing is pressed. For example: </p>

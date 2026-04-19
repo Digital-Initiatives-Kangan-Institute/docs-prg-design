@@ -6,6 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://bki-di-python-edison.netlify.app/python/resources/python-edison-intro/" rel="canonical"/>
+<link href="../edpy-environment/" rel="prev"/>
 <link href="../python-variables/" rel="next"/>
 <link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
@@ -127,6 +128,18 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../edpy-environment/">
+<span class="md-ellipsis">
+    
+  
+    EdPy - Programming Environment
+  
+
+    
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -326,6 +339,18 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../edpy-video-tutorials/">
+<span class="md-ellipsis">
+    
+  
+    EdPy - Video Tutorials
+  
+
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -475,14 +500,14 @@
 <nav aria-label="Navigation" class="md-path">
 <ol class="md-path__list">
 <li class="md-path__item">
-<a class="md-path__link" href="./">
+<a class="md-path__link" href="../edpy-environment/">
 <span class="md-ellipsis">
     Python
   </span>
 </a>
 </li>
 <li class="md-path__item">
-<a class="md-path__link" href="./">
+<a class="md-path__link" href="../edpy-environment/">
 <span class="md-ellipsis">
     Resources
   </span>
@@ -491,35 +516,35 @@
 </ol>
 </nav>
 <article class="md-content__inner md-typeset">
-<h1 id="introduction-to-python-and-edison-robot-v3"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.</span> Introduction to Python and Edison Robot V3</h1>
+<h1 id="introduction-to-python-and-edison-robot-v3"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.</span> Introduction to Python and Edison Robot V3</h1>
 <p>Over the next ten weeks we will be learning the basics of programming. </p>
 <p>The environments that we'll be utilising will be the Python programming language and the Edison V3 robot.  We'll also make use of a microcontroller environment called Wokwi towards the end.</p>
-<h2 id="why-python"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1</span> Why Python?</h2>
+<h2 id="why-python"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1</span> Why Python?</h2>
 <p>Python is a great language to start learning programming because it is simple, readable, and widely used. Its clear, English-like syntax makes it easier for beginners to understand programming concepts without getting overwhelmed by complex rules. Python also has a huge community and countless free resources, meaning learners can quickly find tutorials, examples, and help when stuck. At the same time, it is powerful enough to be used in real-world applications such as web development, data science, artificial intelligence, and automation. This combination of simplicity and versatility makes Python both beginner-friendly and highly practical for future projects. </p>
-<h2 id="why-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.2</span> Why Edison?</h2>
+<h2 id="why-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2</span> Why Edison?</h2>
 <p>The Edison V3 robot is a great way to start learning programming because it combines simplicity with powerful, hands-on learning. Learners can write code that directly controls its sensors, motors, and outputs, making abstract concepts easy to understand through real-world results. It is affordable, durable, and easy to set up with USB charging and a built-in rechargeable battery, so the focus stays on coding rather than technical setup. With free resources, browser-based programming tools, and strong community support, Edison V3 provides an engaging and practical entry point into programming. </p>
 <p>Most importantly, hopefully it's going to be fun!</p>
-<h2 id="what-do-we-need"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.3</span> What do we need?</h2>
+<h2 id="what-do-we-need"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3</span> What do we need?</h2>
 <p>We'll provide you with an Edison robot during class time.
 To interface with the robot you'll need to go to:  https://www.edpyapp.com/v3/ 
 It's recommended that you use the Chrome browser to open the above coding environment. </p>
 <p>There are also video tutorials and a workbook that the Edison team have made available for you to use.  Feel free to use these but be aware that they are not an official part of the course. </p>
 <p>All classwork and assignments will be available via MSTeams.</p>
-<h2 id="getting-to-know-the-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.4</span> Getting to know the Edison</h2>
+<h2 id="getting-to-know-the-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4</span> Getting to know the Edison</h2>
 <p><img alt="Edison Sensors Top" src="../../assets/edison-sensors.png"/></p>
-<h2 id="downloading-a-simple-program-to-the-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.5</span> Downloading a simple program to the Edison</h2>
+<h2 id="downloading-a-simple-program-to-the-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.5</span> Downloading a simple program to the Edison</h2>
 <p>The Edison is programmed via an editor which is found at <a href="https://www.edpyapp.com/v3/">https://www.edpyapp.com/v3/</a> (use Chrome to open). </p>
-<h3 id="connect-edison-to-the-computer-using-the-usb-cable"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.5.1</span> Connect Edison to the computer using the USB cable</h3>
+<h3 id="connect-edison-to-the-computer-using-the-usb-cable"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.5.1</span> Connect Edison to the computer using the USB cable</h3>
 <p>Connect Edison to the computer using the USB cable attached underneath the Edison robot:
 <img alt="Edison Plugged In" src="../../assets/edison-plugged-50.jpg" width="512"/></p>
-<h3 id="upload-the-python-code-to-the-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.5.2</span> Upload the Python code to the Edison</h3>
+<h3 id="upload-the-python-code-to-the-edison"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.5.2</span> Upload the Python code to the Edison</h3>
 <p>Press the ‘Program’ button in the upper right corner of the EdPy app, In the pop-up window select ‘Edison V3 – Paired’ and click ‘Connect’:</p>
 <p><img alt="Program Button" src="../../assets/edpy-upload-cmp.gif"/></p>
-<h2 id="structure-of-an-edpy-program"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.6</span> Structure of an EdPy program</h2>
+<h2 id="structure-of-an-edpy-program"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.6</span> Structure of an EdPy program</h2>
 <p>Programming the Edison consists of two main parts. The Setup part and the Instructional code. </p>
-<h3 id="setup-lines-1-7"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.6.1</span> Setup (Lines 1-7)</h3>
+<h3 id="setup-lines-1-7"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.6.1</span> Setup (Lines 1-7)</h3>
 <p>All Edison programs must contain the setup code. The Setup section tells the Edison how it should set itself up. This means what version it is and what units it should use. For example, should it measure distance in cm or seconds. </p>
-<h3 id="instructional-lines-8-19"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.6.2</span> Instructional (Lines 8-19)</h3>
+<h3 id="instructional-lines-8-19"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.6.2</span> Instructional (Lines 8-19)</h3>
 <p>The instructional code is telling the Edison to do something – giving the Edison instructions to perform.  Can you make a guess at what the Edison will do from reading the code? </p>
 <div class="admonition info">
 <p class="admonition-title">Important</p>
@@ -592,7 +617,7 @@ It's recommended that you use the Chrome browser to open the above coding enviro
 <p>Look at the character sets in the sample code that are written in all capitals, such as <code>V1</code>, <code>V2</code>, <code>CM</code> and <code>INCH</code>. In Python, the convention is that any variable name written in all caps is a <code>constant</code>. </p>
 <p>Constants are variables that maintain the same value everywhere in your program and are used as a reference point throughout the program. EdPy has a range of helpful built-in constants.  These are similar to pre-defined settings that our program will use with the Edison. </p>
 </div>
-<h2 id="task-attempt"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.7</span> Task Attempt</h2>
+<h2 id="task-attempt"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.7</span> Task Attempt</h2>
 <p><a class="md-button" href="../../tasks/task-1-intro-to-edison/">Attempt Task 1 - Intro to Edison</a></p>
 </article>
 </div>
@@ -601,6 +626,19 @@ It's recommended that you use the Chrome browser to open the above coding enviro
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: EdPy - Programming Environment" class="md-footer__link md-footer__link--prev" href="../edpy-environment/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                EdPy - Programming Environment
+              </div>
+</div>
+</a>
 <a aria-label="Next: Variables" class="md-footer__link md-footer__link--next" href="../python-variables/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
