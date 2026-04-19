@@ -14,6 +14,7 @@ nav:
     - Resources:
       - Intro to Python & Edison: python/resources/python-edison-intro.md
       - Variables: python/resources/python-variables.md
+      - Functions: python/resources/python-functions.md
       - Iteration - Event Loop: python/resources/iteration-event-loop.md
       - Selection if / else / elif: python/resources/selection-if-else-elif.md
       - Selection in the Event Loop: python/resources/selection-event-loop.md
