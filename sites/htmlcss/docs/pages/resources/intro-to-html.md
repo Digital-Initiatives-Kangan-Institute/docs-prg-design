@@ -20,25 +20,4 @@ This site will guide you through the fundamentals of how websites are built. You
 </html>
 ```
 
-## Elements
-HTML is made up of **elements**, which are the building blocks of a webpage. An element consists of an **opening tag**, **content**, and a **closing tag** (1).
-{.annotate}
-
-1. Some elements do not require a **closing tag** such as `img`, `link`, `input`, and many others. These are known as **self-closing tags**.
-
-```html
-<h1>This is a heading</h1>
-```
-
-- `<h1>` - Opening Tag
-- `This is a heading` - Content
-- `</h1>` - Closing Tag
-
-### Preview
-??? example "Click to Preview HTML"
-    <div style="font-size: 1.25rem">This is a heading</div>
-
-As you can see above, when **marking up** you must wrap the tags around the content to apply
-
-## Attributes
-HTML elements can contain **attributes** that change the way the element interacts with the page.
+The above is a simple webpage that has a level 1 heading (`h1`), a paragraph (`p`) and a link (`a`) to the [World Wide Web Consortium (W3C)](https://w3.org/) website.

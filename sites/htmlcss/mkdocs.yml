@@ -11,6 +11,10 @@ nav:
   - Menu:
     - Resources:
       - Intro to HTML: pages/resources/intro-to-html.md
+      - Elements: pages/resources/elements.md
+      - Nested Elements: pages/resources/nested-elements.md
+      - Attributes: pages/resources/element-attributes.md
+      - Additional Resources: pages/resources/additional-resources.md
     - Tasks:
       - Task 1 - Elements: pages/tasks/task-1-elements.md
 
@@ -33,8 +37,8 @@ plugins:
       increment_across_pages: true
       # Uncomment below if you would like to reset the table of contents numbering
       # after a certain page:
-      # restart_increment_after: 
-      #  - path/to/page.md
+      restart_increment_after: 
+       - pages/tasks/task-1-elements.md
 
 extra:
   generator: false
