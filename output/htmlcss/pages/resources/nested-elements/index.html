@@ -9,7 +9,7 @@
 <link href="../element-attributes/" rel="next"/>
 <link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
-<title>Nested Elements - Build Simple Webpages</title>
+<title>Nesting - Build Simple Webpages</title>
 <link href="../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#nested-elements">
+<a class="md-skip" href="#nesting">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Nested Elements
+              Nesting
             
           </span>
 </div>
@@ -157,7 +157,7 @@
 <span class="md-ellipsis">
     
   
-    Nested Elements
+    Nesting
   
 
     
@@ -257,7 +257,13 @@
 </ol>
 </nav>
 <article class="md-content__inner md-typeset">
-<h1 id="nested-elements"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.</span> Nested Elements</h1>
+<h1 id="nesting"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.</span> Nesting</h1>
+<p>HTML elements can be <strong>nested</strong> inside one another to create structure and meaning in a webpage. This means an element can contain other elements as its <strong>children</strong>, forming a hierarchy that browsers use to understand how content is related and should be displayed. </p>
+<p>For example, a paragraph element can contain a bold element to emphasize part of the text.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>bold<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span> word inside a paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div></p>
+<p>In this case, the <code>&lt;b&gt;</code> element is <strong>nested</strong> inside the <code>&lt;p&gt;</code> element, so only the word <code>bold</code> is emphasized while still remaining part of the same paragraph.</p>
+<p>Nesting is how most webpages are built. Things like menus, cards, and layouts are all just layers of nested elements inside containers like <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;header&gt;</code>. </p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

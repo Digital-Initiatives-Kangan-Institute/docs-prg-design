@@ -12,7 +12,7 @@ nav:
     - Resources:
       - Intro to HTML: pages/resources/intro-to-html.md
       - Elements: pages/resources/elements.md
-      - Nested Elements: pages/resources/nested-elements.md
+      - Nesting: pages/resources/nested-elements.md
       - Attributes: pages/resources/element-attributes.md
       - Additional Resources: pages/resources/additional-resources.md
     - Tasks:
