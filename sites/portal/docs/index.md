@@ -36,8 +36,8 @@ New pages will appear here as they become available.
         </div>
     </a>
 
-    <!-- Replace href when live: https://bki-di-build-simple-webpages.netlify.app -->
-    <a class="grid-item construction" href="#">
+    <!-- Uncomment when live -->
+    <!-- <a class="grid-item" href="https://bki-di-build-simple-webpages.netlify.app">
         <div class="thumbnail">
             <img src="./assets/build-simple-webpages.png" />
         </div>
@@ -46,5 +46,5 @@ New pages will appear here as they become available.
             <h2>Build Simple Webpages</h2>
             <p>Introduction to HTML focused through building, editing, and linking webpages into a complete website.</p>
         </div>
-    </a>
+    </a> -->
 </div>
