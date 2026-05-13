@@ -14,7 +14,7 @@ New pages will appear here as they become available.
 ## Sites
 
 <div class="grid-layout">
-    <a class="grid-item" href="https://bki-di-python-edison.netlify.app">
+    <a class="grid-item" href="/python-edison">
         <div class="thumbnail">
             <img src="./assets/edison-plugged-50.jpg" />
         </div>
@@ -25,7 +25,7 @@ New pages will appear here as they become available.
         </div>
     </a>
 
-    <a class="grid-item" href="https://bki-di-design-thinking.netlify.app">
+    <a class="grid-item" href="/design">
         <div class="thumbnail">
             <img src="./assets/tinkercad-buttonbox.png" />
         </div>
@@ -37,7 +37,7 @@ New pages will appear here as they become available.
     </a>
 
     <!-- Uncomment when live -->
-    <!-- <a class="grid-item" href="https://bki-di-build-simple-webpages.netlify.app">
+    <!-- <a class="grid-item" href="/htmlcss">
         <div class="thumbnail">
             <img src="./assets/build-simple-webpages.png" />
         </div>
