@@ -20,4 +20,4 @@ This site will guide you through the fundamentals of how websites are built. You
 </html>
 ```
 
-The above is a simple webpage that has a level 1 heading (`h1`), a paragraph (`p`) and a link (`a`) to the [World Wide Web Consortium (W3C)](https://w3.org/) website.
+The above is a simple webpage that has a level 1 heading (`h1`), a paragraph (`p`) and a link (`a`) to the [World Wide Web Consortium (W3C)](w3c.md) website.
