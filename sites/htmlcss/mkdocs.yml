@@ -18,6 +18,7 @@ nav:
       - Additional Resources: pages/resources/additional-resources.md
     - Tasks:
       - Task 1 - Elements: pages/tasks/task-1-elements.md
+      - Task 2 - Cafe Site: pages/tasks/task-2-cafe.md
 
 # Do not touch anything below this line unless you know what you are doing.
 theme:
