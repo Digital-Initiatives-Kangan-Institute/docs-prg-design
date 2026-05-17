@@ -13,6 +13,7 @@ nav:
       - Elements: pages/resources/elements.md
       - Nesting: pages/resources/nested-elements.md
       - Attributes: pages/resources/element-attributes.md
+      - W3C: pages/resources/w3c.md
       - Deploying to GitHub Pages: pages/resources/deployment-github.md
       - Additional Resources: pages/resources/additional-resources.md
     - Tasks:
