@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../intro-to-html/" rel="prev"/>
-<link href="../nested-elements/" rel="next"/>
+<link href="../element-attributes/" rel="next"/>
 <link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Elements - Build Simple Webpages</title>
@@ -169,15 +169,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#element-types">
-<span class="md-ellipsis">
-      
-        Element Types
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#element-structure">
 <span class="md-ellipsis">
       
@@ -186,11 +177,78 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-html-elements">
+<span class="md-ellipsis">
+      
+        Common HTML Elements
+      
+    </span>
+</a>
+<nav aria-label="Common HTML Elements" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#headings">
+<span class="md-ellipsis">
+      
+        Headings
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#paragraphs">
+<span class="md-ellipsis">
+      
+        Paragraphs
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#links">
+<span class="md-ellipsis">
+      
+        Links
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#images">
+<span class="md-ellipsis">
+      
+        Images
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../nested-elements/">
+<a class="md-nav__link" href="#nesting">
+<span class="md-ellipsis">
+      
+        Nesting
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#activity">
+<span class="md-ellipsis">
+      
+        Activity
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../nested-elements.md">
 <span class="md-ellipsis">
     
   
@@ -331,56 +389,55 @@
 </nav>
 <article class="md-content__inner md-typeset">
 <h1 id="elements"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.</span> Elements</h1>
-<p class="annotate">HTML is made up of <strong>elements</strong>, which are the building blocks of a webpage. An element consists of an <strong>opening tag</strong>, <strong>content</strong>, and a <strong>closing tag</strong> (1).</p>
-<ol>
-<li>Some elements do not require a <strong>closing tag</strong> such as <code>img</code>, <code>link</code>, <code>input</code>, and many others. These are known as <strong>self-closing tags</strong>.</li>
-</ol>
-<h2 id="element-types"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1</span> Element Types</h2>
-<p>There are many different types of elements used for structuring and styling the page:</p>
-<table>
-<thead>
-<tr>
-<th>Element</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>h1, h2, h3, ...</td>
-<td>Heading Levels</td>
-</tr>
-<tr>
-<td>b</td>
-<td>Bold Text</td>
-</tr>
-<tr>
-<td>i</td>
-<td>Italic Text</td>
-</tr>
-<tr>
-<td>p</td>
-<td>Paragraphs</td>
-</tr>
-<tr>
-<td>img</td>
-<td>Images</td>
-</tr>
-</tbody>
-</table>
-<h2 id="element-structure"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2</span> Element Structure</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>This is a heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</code></pre></div></td></tr></table></div>
+<h2 id="element-structure"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1</span> Element Structure</h2>
+<p>HTML is made up of <strong>elements</strong>, which are the basic building blocks of a webpage.</p>
+<p>Each element has three parts:</p>
 <ul>
-<li><code>h1</code> - The element name</li>
-<li><code>&lt;h1&gt;</code> - Opening Tag</li>
-<li><code>This is a heading</code> - Content</li>
-<li><code>&lt;/h1&gt;</code> - Closing Tag</li>
+<li>An <strong>opening tag</strong></li>
+<li><strong>Content</strong> (the information shown on the page)</li>
+<li>A <strong>closing tag</strong></li>
 </ul>
-<div class="admonition example">
-<p class="admonition-title">Preview</p>
-<p><div style="font-size: 1.25rem">This is a heading</div></p>
-</div>
-<p>As you can see above, when <strong>marking up</strong> <code>This is a heading</code> using the <code>h1</code> element, the text is larger as it has applied the heading level 1 style to the content.</p>
+<p>You can think of HTML tags like quotation marks in writing. Quotation marks wrap around text to show it’s a quote, and HTML tags wrap around content to define what it is and how it should appear on a webpage.</p>
+<p>For example:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div></p>
+<p>In this example:</p>
+<ul>
+<li><code>&lt;h1&gt;</code> is the <strong>opening tag</strong></li>
+<li><code>Hello, world!</code> is the <strong>content</strong></li>
+<li><code>&lt;/h1&gt;</code> is the <strong>closing tag</strong></li>
+</ul>
+<p>The forward slash (<code>/</code>) inside the closing tag tells the browser that the element has ended.</p>
+<p>Together, these form an <strong>element</strong>.</p>
+<h2 id="common-html-elements"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2</span> Common HTML Elements</h2>
+<p>Different HTML tags have different purposes. Some create headings, some create paragraphs, and others create links or images.</p>
+<h3 id="headings"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.1</span> Headings</h3>
+<p>Heading elements are used to display titles and section headings on a webpage.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Main Heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Subheading<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="paragraphs"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.2</span> Paragraphs</h3>
+<p>Paragraph elements are used to display blocks of text.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a paragraph of text.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="links"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.3</span> Links</h3>
+<p>Link elements are used to take users to another webpage or website when clicked.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://example.com"</span><span class="p">&gt;</span>Visit Website<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="images"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.4</span> Images</h3>
+<p>Image elements are used to display pictures on a webpage.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"capybara.jpg"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"A capybara"</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="nesting"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3</span> Nesting</h2>
+<p>HTML elements can be <strong>nested</strong> inside one another to create structure and meaning in a webpage. This means an element can contain other elements as its <strong>children</strong>, forming a hierarchy that browsers use to understand how content is related and should be displayed. </p>
+<p>For example, a paragraph element can contain a bold element to emphasize part of the text.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a <span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>bold<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span> word inside a paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div></p>
+<p>In this case, the <code>&lt;b&gt;</code> element is <strong>nested</strong> inside the <code>&lt;p&gt;</code> element, so only the word <code>bold</code> is emphasized while still remaining part of the same paragraph.</p>
+<p>Nesting is how most webpages are built. Things like menus, cards, and layouts are all just layers of nested elements.</p>
+<h2 id="activity"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4</span> Activity</h2>
+<p><a class="md-button" href="../../tasks/task-1-elements/">Attempt Activity 1 - Elements</a></p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -401,13 +458,13 @@
               </div>
 </div>
 </a>
-<a aria-label="Next: Nesting" class="md-footer__link md-footer__link--next" href="../nested-elements/">
+<a aria-label="Next: Attributes" class="md-footer__link md-footer__link--next" href="../element-attributes/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                Nesting
+                Attributes
               </div>
 </div>
 <div class="md-footer__button md-icon">

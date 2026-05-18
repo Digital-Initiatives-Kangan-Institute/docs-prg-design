@@ -6,6 +6,8 @@
 
 <embed src="https://code.cyberbilby.com/#eyJ0aXRsZSI6IkVkaXRvciIsImh0bWwiOiJJIHdvdWxkIGxpa2UgdG8gYmUgYm9sZCEiLCJjc3MiOiIiLCJqcyI6IiJ9" width="100%" height="480px"
         style="border: 1px solid black; border-radius: 10px; box-shadow: rgb(100, 100, 100) 0 2px 0"></embed>
+??? question "Hint"
+    The tag name for the **bold** element is called `b`. Remember elements need an opening and closing tag.
 
 ## Italic Text
 !!! abstract "Instructions"
@@ -13,6 +15,8 @@
 
 <embed src="https://code.cyberbilby.com/#eyJ0aXRsZSI6IkVkaXRvciIsImh0bWwiOiJJIHdvdWxkIGxpa2UgdG8gYmUgaXRhbGljISIsImNzcyI6IiIsImpzIjoiIn0=" width="100%" height="480px"
         style="border: 1px solid black; border-radius: 10px; box-shadow: rgb(100, 100, 100) 0 2px 0"></embed>
+??? question "Hint"
+    The tag name for the **italic** element is called `i`. Remember elements need an opening and closing tag.
 
 ## Bold Italic Text
 !!! abstract "Instructions"
@@ -20,3 +24,5 @@
 
 <embed src="https://code.cyberbilby.com/#eyJ0aXRsZSI6IkVkaXRvciIsImh0bWwiOiJJIHdvdWxkIGxpa2UgdG8gYmUgYm9sZCBhbmQgaXRhbGljISIsImNzcyI6IiIsImpzIjoiIn0=" width="100%" height="480px"
         style="border: 1px solid black; border-radius: 10px; box-shadow: rgb(100, 100, 100) 0 2px 0"></embed>
+??? question "Hint"
+    The tag name for the **bold** element is called `b`, and the **italic** element is called `i`. Remember elements need an opening and closing tag.
