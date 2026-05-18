@@ -11,7 +11,6 @@ nav:
     - Resources:
       - Intro to HTML: pages/resources/intro-to-html.md
       - Elements: pages/resources/elements.md
-      - Nesting: pages/resources/nested-elements.md
       - Attributes: pages/resources/element-attributes.md
       - W3C: pages/resources/w3c.md
       - Deploying to GitHub Pages: pages/resources/deployment-github.md
