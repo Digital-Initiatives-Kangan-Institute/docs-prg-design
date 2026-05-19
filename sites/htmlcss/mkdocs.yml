@@ -38,8 +38,8 @@ plugins:
       increment_across_pages: true
       # Uncomment below if you would like to reset the table of contents numbering
       # after a certain page:
-      restart_increment_after: 
-       - pages/tasks/task-1-elements.md
+      #restart_increment_after: 
+      # - pages/tasks/task-1-elements.md
 
 extra:
   generator: false

@@ -5,16 +5,18 @@ copyright: Digital Initiatives - Bendigo Kangan Institute
 
 nav:
   # The Return to Portal item should always be the first item in the navigation.
-  - Return to Portal: https://bki-di-portal.netlify.app/
+  - Return to Portal: /portal
 
   # Add additional navigation below this point:
-  - micro:bit:
-    - resources:
+  - Menu:
+    - Resources:
       - Introduction to Microbits and variables: /pages/resources/01-intro-variables
       - Functions: /pages/resources/02-functions
       - Event Loop: /pages/resources/03-event-loop
       - Selection: /pages/resources/04-selection-if-else-elif
       - Selection in Event Loop:  /pages/resources/05-selection-event-loop
+    - Tasks:
+      - Task 1 - Introduction to microbit: /pages/tasks/task1
 
 # Do not touch anything below this line unless you know what you are doing.
 theme:
@@ -35,8 +37,8 @@ plugins:
       increment_across_pages: true
       # Uncomment below if you would like to reset the table of contents numbering
       # after a certain page:
-      # restart_increment_after: 
-      #  - path/to/page.md
+      restart_increment_after: 
+        -  pages/tasks/task1.md
 
 extra:
   generator: false

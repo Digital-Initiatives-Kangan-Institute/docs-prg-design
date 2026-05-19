@@ -1,4 +1,57 @@
-# Python Variables
+# Introduction to micro:bit with Python
+
+## What is micro:bit?
+
+The micro:bit is a small, programmable device that introduces learners to coding through hands-on projects. Using Python via the user-friendly python.microbit.org editor makes it ideal for beginners, as its simple interface and clear syntax help build confidence and foundational programming skills quickly.
+
+![microbit](../../assets/microbit.png)
+---
+
+## What is Python?
+
+Python is a **high-level programming language** that is designed to be:
+
+- Easy to read
+- Simple to learn
+- Powerful enough to build real applications
+
+Python uses clear, nearly plain-English syntax, which makes it a great language for beginners.
+
+---
+
+## Why Use Python with the micro:bit?
+
+We use Python to program the micro:bit because:
+
+- **Easy to understand**  
+  Python code is simple and readable, making it ideal for learning programming concepts.
+
+- **Focus on problem-solving**  
+  You can spend more time creating ideas and less time worrying about complicated syntax.
+
+- **Works well with hardware**  
+  Python lets you easily control micro:bit features like LEDs, buttons, and sensors.
+
+- **Transferable skill**  
+  Python is widely used in real-world fields such as data, web development, and automation.
+
+---
+
+## micro:bit online editor
+
+We will write and test our code online using the official micro:bit Python editor:
+
+<https://python.microbit.org/v/3>
+
+The site has allows us to send code to our micro:bit, but we can also run our code in the built-in simulator to see how it works before sending it to the device.
+
+The simulator is useful as it lets you:
+
+- Write Python code
+- Run your program instantly
+- See virtual LEDs, buttons, and sensors in action
+
+---
 
 ## What is a Program?
 

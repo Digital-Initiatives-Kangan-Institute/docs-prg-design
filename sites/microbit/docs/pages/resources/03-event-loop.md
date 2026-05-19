@@ -70,7 +70,7 @@ while True:
     sleep(1000)
 ```
 
-✅ Both images repeat because they are **inside the loop**
+Both images repeat because they are **inside the loop**
 
 ***
 
@@ -121,7 +121,7 @@ while True:
         display.show(Image.NO)
 ```
 
-### What happens
+### What happens?
 
 * The program constantly checks button A
 * Shows different images depending on input
@@ -147,7 +147,7 @@ while True:
         flash(3)
 ```
 
-### What happens
+### What happens?
 
 * The loop runs forever
 * When button A is pressed → function runs
@@ -172,7 +172,7 @@ while True:
     show_face(d)
 ```
 
-### What happens
+### What happens?
 
 * A random number is generated
 * The display shows for a random time
@@ -202,15 +202,6 @@ Loops allow us to:
 1. Create a loop that:
     * Flashes a smiley face continuously
 
-2. Create a program where:
-    * Button A shows a heart
-    * Button B shows a square
-
-3. Create a function that:
-    * Flashes an icon 5 times
-    * Call it from inside a loop
-
-4. Extension:
-    * Use random numbers to vary delay time
+2. Create a program that displays "Hello <your name>"
 
 ***
