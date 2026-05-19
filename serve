@@ -4,8 +4,12 @@ SITES_DIR="./sites"
 DEFAULT_PORT=8000
 
 # ── Colours ───────────────────────────────────
-RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'
-CYAN='\033[0;36m'; BOLD='\033[1m'; RESET='\033[0m'
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
+BOLD='\033[1m'
+RESET='\033[0m'
 
 # ── Header ────────────────────────────────────
 echo -e "\n${BOLD}${CYAN}╔══════════════════════════════════════╗${RESET}"
@@ -57,4 +61,5 @@ fi
 echo -e "\n${GREEN}✔  Serving '${BOLD}${selected}${RESET}${GREEN}' at http://127.0.0.1:${PORT}${RESET}\n"
 
 cd "$SITES_DIR/$selected" || exit 1
-mkdocs serve --dev-addr "127.0.0.1:${PORT}"
+mkdocs serve --dev-addr "127.0.0.1:${PORT}" --livereload
+
