@@ -171,5 +171,5 @@ echo -e "
           └── style.css
 
   ${CYAN}To start your site, run:${RESET}
-    ./serve
+    ./serve.sh
 "
