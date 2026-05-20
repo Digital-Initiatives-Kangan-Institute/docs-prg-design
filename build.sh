@@ -12,11 +12,16 @@ if [[ ! -d "$SITES_DIR" ]]; then
   exit 1
 fi
 
+if ! command -v uv &>/dev/null; then
+  echo "Error: uv is not installed. Run: curl -LsSf https://astral.sh/uv/install.sh | sh" >&2
+  exit 1
+fi
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
-NC='\033[0m' # no colour
+NC='\033[0m'
 
 pass=0
 fail=0
@@ -30,7 +35,6 @@ for site_path in "$SITES_DIR"/*/; do
   config="$site_path/mkdocs.yml"
   out_dir="$BUILD_DIR/$site_name"
 
-  # Skip if no mkdocs.yml
   if [[ ! -f "$config" ]]; then
     echo -e "${YELLOW}⚠  Skipping '$site_name' — no mkdocs.yml found${NC}"
     (( skip++ )) || true
@@ -38,10 +42,9 @@ for site_path in "$SITES_DIR"/*/; do
   fi
 
   echo -e "🔨 Building '${site_name}'..."
-
   mkdir -p "$out_dir"
 
-  build_log="$(mkdocs build \
+  build_log="$(uv run mkdocs build \
       --config-file "$config" \
       --site-dir "$out_dir" 2>&1)" \
     && {

@@ -1,0 +1,13 @@
+[project]
+name = "mkdocs-sites"
+version = "0.1.0"
+description = "Holds the BKI Digital Initiatives learning material."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-enumerate-headings-plugin>=0.7.0",
+    "mkdocs-material>=9.7.6",
+    "pygments>=2.20.0",
+    "pymdown-extensions>=10.21.3",
+]

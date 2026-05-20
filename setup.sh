@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-VENV_DIR=".venv"
-
 # ── Colours ───────────────────────────────────
 RED='\033[0;31m'; GREEN='\033[0;32m'
 CYAN='\033[0;36m'; BOLD='\033[1m'; RESET='\033[0m'
@@ -16,35 +14,23 @@ echo -e "\n${BOLD}${CYAN}╔═════════════════�
 echo -e "${BOLD}${CYAN}║         MkDocs Environment Setup     ║${RESET}"
 echo -e "${BOLD}${CYAN}╚══════════════════════════════════════╝${RESET}\n"
 
-# ── Virtual environment ───────────────────────
-print_step "Creating virtual environment..."
-python3 -m venv "$VENV_DIR"
-print_success "Virtual environment created at $VENV_DIR"
+# ── Check for uv ──────────────────────────────
+if ! command -v uv &>/dev/null; then
+  print_step "Installing uv..."
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+  source "$HOME/.local/bin/env"
+  print_success "uv installed"
+fi
 
 # ── Dependencies ──────────────────────────────
-print_step "Upgrading pip..."
-"$VENV_DIR/bin/pip" install --upgrade pip --quiet
-print_success "pip upgraded"
-
 print_step "Installing dependencies..."
-"$VENV_DIR/bin/pip" install --quiet \
-  mkdocs \
-  mkdocs-material \
-  mkdocs-enumerate-headings-plugin \
-  pymdown-extensions \
-  pygments
-
-print_success "mkdocs installed"
-print_success "mkdocs-material installed"
-print_success "mkdocs-enumerate-headings-plugin installed"
+uv sync
 
 # ── Done ──────────────────────────────────────
 echo -e "\n${BOLD}${GREEN}╔══════════════════════════════════════╗${RESET}"
 echo -e "${BOLD}${GREEN}║   Setup complete! ✓                  ║${RESET}"
 echo -e "${BOLD}${GREEN}╚══════════════════════════════════════╝${RESET}"
 echo -e "
-  ${CYAN}To activate manually:${RESET}  source ${VENV_DIR}/bin/activate
-  ${CYAN}To create a new site:${RESET}  ./create
-  ${CYAN}To serve a site:${RESET}       ./serve
-  ${CYAN}To deploy a site:${RESET}      ./deploy
+  ${CYAN}To create a new site:${RESET}  ./create.sh
+  ${CYAN}To serve a site:${RESET}       ./serve.sh
 "
