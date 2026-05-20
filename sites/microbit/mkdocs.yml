@@ -15,6 +15,7 @@ nav:
       - Event Loop: pages/resources/03-event-loop.md
       - Selection: pages/resources/04-selection-if-else-elif.md
       - Selection in Event Loop:  pages/resources/05-selection-event-loop.md
+      - Loops and conditions:  pages/resources/06-loops.md
     - Tasks:
       - Task 1 - Introduction to microbit: pages/tasks/task1
 
