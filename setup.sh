@@ -21,17 +21,13 @@ print_step "Creating virtual environment..."
 python3 -m venv "$VENV_DIR"
 print_success "Virtual environment created at $VENV_DIR"
 
-print_step "Activating virtual environment..."
-source "$VENV_DIR/bin/activate"
-print_success "Virtual environment activated"
-
 # ── Dependencies ──────────────────────────────
 print_step "Upgrading pip..."
-pip install --upgrade pip --quiet
+"$VENV_DIR/bin/pip" install --upgrade pip --quiet
 print_success "pip upgraded"
 
 print_step "Installing dependencies..."
-pip install --quiet \
+"$VENV_DIR/bin/pip" install --quiet \
   mkdocs \
   mkdocs-material \
   mkdocs-enumerate-headings-plugin \
@@ -47,6 +43,7 @@ echo -e "\n${BOLD}${GREEN}╔═════════════════
 echo -e "${BOLD}${GREEN}║   Setup complete! ✓                  ║${RESET}"
 echo -e "${BOLD}${GREEN}╚══════════════════════════════════════╝${RESET}"
 echo -e "
+  ${CYAN}To activate manually:${RESET}  source ${VENV_DIR}/bin/activate
   ${CYAN}To create a new site:${RESET}  ./create
   ${CYAN}To serve a site:${RESET}       ./serve
   ${CYAN}To deploy a site:${RESET}      ./deploy
