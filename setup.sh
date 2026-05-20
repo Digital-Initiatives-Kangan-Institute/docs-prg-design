@@ -14,23 +14,53 @@ echo -e "\n${BOLD}${CYAN}╔═════════════════�
 echo -e "${BOLD}${CYAN}║         MkDocs Environment Setup     ║${RESET}"
 echo -e "${BOLD}${CYAN}╚══════════════════════════════════════╝${RESET}\n"
 
-# ── Check for uv ──────────────────────────────
-if ! command -v uv &>/dev/null; then
-  print_step "Installing uv..."
-  curl -LsSf https://astral.sh/uv/install.sh | sh
-  source "$HOME/.local/bin/env"
-  print_success "uv installed"
+# ── Check Python ──────────────────────────────
+if ! command -v python3 >/dev/null 2>&1; then
+    print_error "python3 is not installed."
+    exit 1
 fi
+
+# ── Create Virtual Environment ────────────────
+if [ ! -d ".venv" ]; then
+    print_step "Creating Python virtual environment..."
+    python3 -m venv .venv
+    print_success ".venv created"
+else
+    print_success ".venv already exists"
+fi
+
+# ── Ensure pip Exists ─────────────────────────
+if [ ! -f "./.venv/bin/pip" ]; then
+    print_error "pip was not found in .venv"
+    exit 1
+fi
+
+# ── Upgrade pip ───────────────────────────────
+print_step "Upgrading pip..."
+./.venv/bin/pip install --upgrade pip
 
 # ── Dependencies ──────────────────────────────
 print_step "Installing dependencies..."
-uv sync
+
+./.venv/bin/pip install \
+    mkdocs \
+    mkdocs-material \
+    mkdocs-enumerate-headings-plugin \
+    pymdown-extensions \
+    pygments
+
+print_success "mkdocs installed"
+print_success "mkdocs-material installed"
+print_success "mkdocs-enumerate-headings-plugin installed"
+print_success "pymdown-extensions installed"
+print_success "pygments installed"
 
 # ── Done ──────────────────────────────────────
 echo -e "\n${BOLD}${GREEN}╔══════════════════════════════════════╗${RESET}"
 echo -e "${BOLD}${GREEN}║   Setup complete! ✓                  ║${RESET}"
 echo -e "${BOLD}${GREEN}╚══════════════════════════════════════╝${RESET}"
+
 echo -e "
-  ${CYAN}To create a new site:${RESET}  ./create.sh
-  ${CYAN}To serve a site:${RESET}       ./serve.sh
+  ${CYAN}To create a new site:${RESET}    ./create.sh
+  ${CYAN}To serve a site:${RESET}         ./serve.sh
 "

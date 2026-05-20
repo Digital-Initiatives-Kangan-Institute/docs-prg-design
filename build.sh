@@ -44,7 +44,7 @@ for site_path in "$SITES_DIR"/*/; do
   echo -e "🔨 Building '${site_name}'..."
   mkdir -p "$out_dir"
 
-  build_log="$(uv run mkdocs build \
+  build_log="$(./.venv/bin/mkdocs build \
       --config-file "$config" \
       --site-dir "$out_dir" 2>&1)" \
     && {
