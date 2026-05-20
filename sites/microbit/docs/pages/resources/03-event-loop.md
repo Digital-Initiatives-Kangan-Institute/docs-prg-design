@@ -29,7 +29,7 @@ while True:
     sleep(500)
 ```
 
-### What happens
+**What happens**
 
 * The program shows a heart
 * Waits
@@ -58,7 +58,7 @@ This continues forever unless:
 
 Python uses **indentation** to define what belongs inside the loop.
 
-### Correct Example
+**Correct Example**
 
 ```python
 from microbit import *
@@ -74,7 +74,7 @@ Both images repeat because they are **inside the loop**
 
 ***
 
-### Incorrect Example
+**Incorrect Example**
 
 ```python
 from microbit import *
@@ -86,7 +86,7 @@ sleep(1000)
 display.show(Image.SAD)
 ```
 
-### What happens
+**What happens**
 
 * `HAPPY` repeats forever
 * `SAD` never runs
@@ -121,7 +121,7 @@ while True:
         display.show(Image.NO)
 ```
 
-### What happens?
+**What happens?**
 
 * The program constantly checks button A
 * Shows different images depending on input
@@ -147,7 +147,7 @@ while True:
         flash(3)
 ```
 
-### What happens?
+**What happens?**
 
 * The loop runs forever
 * When button A is pressed → function runs
@@ -172,7 +172,7 @@ while True:
     show_face(d)
 ```
 
-### What happens?
+**What happens?**
 
 * A random number is generated
 * The display shows for a random time
@@ -188,7 +188,7 @@ Loops allow us to:
 * Create interactive programs
 * Build event-driven systems
 
-### Key Concepts
+**Key Concepts**
 
 * `while True:` → infinite loop
 * Indentation → controls what repeats

@@ -10,13 +10,13 @@ nav:
   # Add additional navigation below this point:
   - Menu:
     - Resources:
-      - Introduction to Microbits and variables: /pages/resources/01-intro-variables
-      - Functions: /pages/resources/02-functions
-      - Event Loop: /pages/resources/03-event-loop
-      - Selection: /pages/resources/04-selection-if-else-elif
-      - Selection in Event Loop:  /pages/resources/05-selection-event-loop
+      - Introduction to Microbits and variables: pages/resources/01-intro-variables.md
+      - Functions: pages/resources/02-functions.md
+      - Event Loop: pages/resources/03-event-loop.md
+      - Selection: pages/resources/04-selection-if-else-elif.md
+      - Selection in Event Loop:  pages/resources/05-selection-event-loop.md
     - Tasks:
-      - Task 1 - Introduction to microbit: /pages/tasks/task1
+      - Task 1 - Introduction to microbit: pages/tasks/task1
 
 # Do not touch anything below this line unless you know what you are doing.
 theme:

@@ -78,7 +78,7 @@ In the above code:
 !!! note
     Notice in line 4 that the micro:bit displays `10` because the `length` variable was created and set to `10` previously.
 
-### Setting values to variables
+## Setting values to variables
 
 Setting values to variables is a fundamental part of programming in Python. You use the assignment operator `=` to give a variable a value. Recalling the value only requires you to use the name of the variable.
 
@@ -143,7 +143,3 @@ Line 11 shows the `left_image` arrow again, and line 13 shows the `right_image` 
 ## Class Activity
 
 Add more to the display animation above by adding up and down arrows.  See the micro:bit documentation at <https://python.microbit.org/v/3/api/microbit.Image> or just experiment!
-
-## Task Attempt
-
-[Attempt Task 2 - Variables](../tasks/task-2-variables.md){ .md-button }

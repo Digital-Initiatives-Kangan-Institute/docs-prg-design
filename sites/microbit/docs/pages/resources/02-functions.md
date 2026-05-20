@@ -43,14 +43,14 @@ Functions always use **parentheses `()`**.
 
 We can create our own functions using `def`.
 
-### Syntax
+**Syntax**
 
 ```python
 def function_name():
     # code to run
 ```
 
-### Example
+**Example**
 
 ```python
 from microbit import *
@@ -76,7 +76,7 @@ small_dance()
 Here we created two functions of our own *small_dance* and *show_heart*.  
 We can then run these as many times as we like by calling them. This is much easier than writing the same code multiple times.  
 
-### Key Idea
+**Key Idea**
 
 Functions are often used to gather together code that we want to reuse. This makes our program more efficient and easier to read.
 We write the function **once**, but can call it **many times**.  
@@ -89,14 +89,14 @@ Functions can take inputs called **parameters**.  A parameter is a variable that
 
 This makes them more flexible.
 
-### Syntax
+**Syntax**
 
 ```python
 def function_name(parameter1, parameter2):
     # code using parameters
 ```
 
-### Example
+**Example**
 
 ```python
 from microbit import *
@@ -117,7 +117,7 @@ flash_icon(Image.HEART, 500)
 flash_icon(Image.SQUARE, 200)
 ```
 
-### Key Idea
+**Key Idea**
 
 Parameters let you **reuse the same function with different values**.
 
@@ -131,7 +131,7 @@ This allows us to **store or use the result**.
 
 ***
 
-### Example 1: Returning a Value
+**Example 1: Returning a Value**
 
 ```python
 from microbit import *
@@ -147,7 +147,7 @@ display.scroll(result)
 
 ***
 
-### Example 2: Custom Function with Return
+**Example 2: Custom Function with Return**
 
 ```python
 from microbit import *
@@ -171,7 +171,7 @@ Functions help us:
 - Avoid repetition
 - Make programs easier to understand
 
-### Key Concepts
+**Key Concepts**
 
 - `def` → define a function
 - `()` → call a function

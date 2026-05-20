@@ -48,7 +48,7 @@ while True:
 
 ## More Interactions
 
-### Obstacle Detection (Distance Sensor)
+**Obstacle Detection (Distance Sensor)**
 
 The micro:bit can read analog signals from its pins. Below is an example using an IR distance sensor connected to pin 1 — a low reading means something is close:
 
@@ -69,7 +69,7 @@ while True:
 
     Before you run this program, have a guess at what the micro:bit does when running it.
 
-### Clap / Sound Sensing (micro:bit V2)
+**Clap / Sound Sensing (micro:bit V2)**
 
 ```python
 from microbit import *
@@ -91,7 +91,7 @@ while True:
 
     **Note:** The built-in microphone is only available on the **micro:bit V2**.
 
-### Light Levels
+**Light Levels**
 
 ```python
 from microbit import *
@@ -113,7 +113,7 @@ while True:
 
     Unlike the Edison which has separate left and right light sensors, the micro:bit has a single combined light sensor through the display. Two different pitches could be used to simulate different responses — try changing the frequency passed to `music.pitch()`.
 
-### Random Numbers
+**Random Numbers**
 
 ```python
 from microbit import *
