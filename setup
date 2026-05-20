@@ -34,7 +34,10 @@ print_step "Installing dependencies..."
 pip install --quiet \
   mkdocs \
   mkdocs-material \
-  mkdocs-enumerate-headings-plugin
+  mkdocs-enumerate-headings-plugin \
+  pymdown-extensions \
+  pygments
+
 print_success "mkdocs installed"
 print_success "mkdocs-material installed"
 print_success "mkdocs-enumerate-headings-plugin installed"
