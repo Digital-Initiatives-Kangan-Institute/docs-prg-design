@@ -61,5 +61,5 @@ fi
 echo -e "\n${GREEN}✔  Serving '${BOLD}${selected}${RESET}${GREEN}' at http://127.0.0.1:${PORT}${RESET}\n"
 
 cd "$SITES_DIR/$selected" || exit 1
-./.venv/bin/mkdocs serve --dev-addr "127.0.0.1:${PORT}" --livereload
+../../.venv/bin/mkdocs serve --dev-addr "127.0.0.1:${PORT}" --livereload
 
