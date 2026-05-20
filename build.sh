@@ -12,11 +12,6 @@ if [[ ! -d "$SITES_DIR" ]]; then
   exit 1
 fi
 
-if ! command -v uv &>/dev/null; then
-  echo "Error: uv is not installed. Run: curl -LsSf https://astral.sh/uv/install.sh | sh" >&2
-  exit 1
-fi
-
 # ── Helpers ───────────────────────────────────────────────────────────────────
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
