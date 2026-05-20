@@ -27,7 +27,7 @@ During printing, the filament is **fed into the printer’s extruder**, where it
 
 ![Filament Spools](../assets/filament-spools.png){ width=500 }
 
-### Filament Sizes
+**Filament Sizes**
 Most FDM printers use filament that’s either:
 
 - 1.75 mm in diameter (the most common), or

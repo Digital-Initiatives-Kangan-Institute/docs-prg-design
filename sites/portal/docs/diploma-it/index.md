@@ -11,7 +11,7 @@ Welcome to the Digital Initiatives portal. Click on any of the cards below to op
 New pages will appear here as they become available.
 </p>
 
-### Diploma of Information Technology
+**Diploma of Information Technology**
 
 <div class="grid-layout">
     <a class="grid-item construction" href="https://bki-di-nextjs.netlify.app">

@@ -28,7 +28,7 @@ Together, these form an **element**.
 ## Common HTML Elements
 Different HTML tags have different purposes. Some create headings, some create paragraphs, and others create links or images.
 
-### Headings
+**Headings**
 Heading elements are used to display titles and section headings on a webpage.
 
 ```html
@@ -36,21 +36,21 @@ Heading elements are used to display titles and section headings on a webpage.
 <h2>Subheading</h2>
 ```
 
-### Paragraphs
+**Paragraphs**
 Paragraph elements are used to display blocks of text.
 
 ```html
 <p>This is a paragraph of text.</p>
 ```
 
-### Links
+**Links**
 Link elements are used to take users to another webpage or website when clicked.
 
 ```html
 <a href="https://example.com">Visit Website</a>
 ```
 
-### Images
+**Images**
 Image elements are used to display pictures on a webpage.
 
 ```html

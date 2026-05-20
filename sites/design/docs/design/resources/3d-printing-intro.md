@@ -16,21 +16,21 @@ In classrooms, 3D printing helps students learn design thinking, problem-solving
 ## Main Types of 3D Printing
 There are several 3D printing technologies, but the three most common types are: 
 
-### Fused Deposition Modelling (FDM)
+**Fused Deposition Modelling (FDM)**
 - The most widely used and affordable type. 
 - Works by melting plastic filament and laying it down in thin layers. 
 - Common for hobbyists, schools, and prototypes. 
 
 ![Three FDM Printers](../assets/fdm-printers.png){ width=600 }
 
-### Stereolithography (SLA) - often called Resin Printing
+**Stereolithography (SLA) - often called Resin Printing**
 - Uses a laser to harden liquid resin into solid layers.
 - Produces very smooth and detailed prints.
 - Often used for jewellery, dental models, and miniatures.
 
 ![SLA Printer](../assets/sla-printer.png){ width=200 }
 
-### Selective Laser Sintering (SLS)
+**Selective Laser Sintering (SLS)**
 - Uses a laser to fuse powdered material (usually nylon).
 - Strong, durable parts without needing support structures.
 - Used in professional and industrial settings.

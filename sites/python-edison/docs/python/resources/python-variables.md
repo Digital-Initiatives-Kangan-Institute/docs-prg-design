@@ -31,7 +31,7 @@ In the above code:
 
 Notice in `line 13` that the Edison moves a distance of `10cm` because the length variable was created a set to 10 previously.
 
-### Settings values to variables
+**Settings values to variables**
 Setting values to variables is a fundamental part of programming in Python. You use the assignment operator = to give a variable a value.  Recalling the value only requires you to use the name of the variable. 
 
 You can set multiple variables and use them to set up other variables.

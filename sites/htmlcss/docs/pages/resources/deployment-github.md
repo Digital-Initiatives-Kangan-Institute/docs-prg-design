@@ -32,7 +32,7 @@ h2.notice-me {
 ## Creating a GitHub Repository {.notice-me}
 The following instructions will show you how to create a GitHub repository, to prepare to upload your website files.
 
-### Instructions
+**Instructions**
 1. Using your web browser of choice (**Google Chrome, Microsoft Edge, FireFox**, etc..), visit [https://github.com/](https://github.com/).
 
 2. Locate the `Create new...` button **at the top of the screen** and **click** on it
@@ -60,7 +60,7 @@ You need to give your repository a name and enable the `Add README` option.
         ![Repository with README.md file](../../assets/deploy-github/readme-file.png)
 
 ## Uploading Site Files {.notice-me}
-### Instructions
+**Instructions**
 1. Click the `Add file` button
 
     ??? question "Preview Image - Click to view"
@@ -91,7 +91,7 @@ Select any `index.html` and other `html` files you created in a previous activit
         ![Site files in repository](../../assets/deploy-github/site-files.png)
 
 ## Deploying to GitHub Pages {.notice-me}
-### Instructions
+**Instructions**
 1. Click on the `Settings` tab in the navigation bar
 
     ??? question "Preview Image - Click to view"
@@ -118,7 +118,7 @@ Select any `index.html` and other `html` files you created in a previous activit
         ![Branch save button](../../assets/deploy-github/branch-save-button.png)
 
 ## Viewing your Deployed Website {.notice-me}
-### Instructions
+**Instructions**
 1. Click on the `Actions` tab in the navigation bar
 
     ??? question "Preview Image - Click to view"
@@ -154,7 +154,7 @@ This will take you to the completed action (the GitHub deployment)
 ## Troubleshooting {.notice-me}
 If you are experiencing issues with your deployed GitHub Pages website, refer to the frequently asked questions below for help:
 
-### I only see the name of my repository with an empty site
+**I only see the name of my repository with an empty site**
 If your website looks like the following after deploying your site and opening the link, then you have not correctly setup your index file:
 
 ??? question "Preview Image - Click to view"

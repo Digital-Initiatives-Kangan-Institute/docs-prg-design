@@ -5,6 +5,7 @@ hide:
 ---
 
 # Digital Initiatives Portal
+
 <p id="banner">
 Welcome to the Digital Initiatives portal. Click on any of the cards below to open a site and bookmark this page for easy access to these pages.
 
@@ -45,6 +46,17 @@ New pages will appear here as they become available.
         <div class="details">
             <h2>Build Simple Webpages</h2>
             <p>Introduction to HTML focused through building, editing, and linking webpages into a complete website.</p>
+        </div>
+    </a>
+
+    <a class="grid-item" href="/microbit">
+        <div class="thumbnail">
+            <img src="./assets/microbit.png" />
+        </div>
+
+        <div class="details">
+            <h2>Micro:bit</h2>
+            <p>Introduction to Programming via Python and Micro:bits</p>
         </div>
     </a>
 </div>
