@@ -23,8 +23,8 @@ You are required to create a storage device for marbles.
 4. Get feedback and repeat process to fix shortcomings (Use template provided)
 
 ## Resources
-### Marble Storage Feedback Template
+**Marble Storage Feedback Template**
 [![Marble Storage Feedback Template](../assets/ms-word.webp){ width=64 }](../assets/Marble%20Storage%20Feedback.docx)
 
-### Prototype Testing Template
+**Prototype Testing Template**
 [![Prototype Testing Template](../assets/ms-excel.webp){ width=80 }](../assets/Prototype%20Testing%20Template.xlsx)

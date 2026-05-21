@@ -57,7 +57,7 @@ while True:
     In this case the Edison will beep all the time because `lines 15` and `16` belong to the while statement at `line 11`. This means that on every loop / iteration `lines 15` and `16` will run.
 
 ## More Interactions
-### Obstacle Detection
+**Obstacle Detection**
 ```py
 #-------------Setup----------------
 
@@ -81,7 +81,7 @@ while True:
 
     Before you upload this program to the Edison, have a guess at what the Edison does when running this program.
 
-### Clap Sensing
+**Clap Sensing**
 ```py
 #-------------Setup----------------
 
@@ -105,7 +105,7 @@ while True:
 !!! note
     `Line 10` is used to clear the Edison of previous clap detections.
 
-### Light Levels
+**Light Levels**
 ```py
 #-------------Setup----------------
 
@@ -129,7 +129,7 @@ while True:
     Ed.TimeWait(500, Ed.TIME_MILLISECONDS)
 ```
 
-### Random Numbers
+**Random Numbers**
 ```py
 #-------------Setup----------------
 

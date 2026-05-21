@@ -1,4 +1,4 @@
-site_name: Build Simple Webpages
+site_name: microbit
 
 # This text shows in the footer.
 copyright: Digital Initiatives - Bendigo Kangan Institute
@@ -6,24 +6,24 @@ copyright: Digital Initiatives - Bendigo Kangan Institute
 nav:
   # The Return to Portal item should always be the first item in the navigation.
   - Return to Portal: /portal
+
   # Add additional navigation below this point:
   - Menu:
     - Resources:
-      - Intro to HTML: pages/resources/intro-to-html.md
-      - Elements: pages/resources/elements.md
-      - Attributes: pages/resources/element-attributes.md
-      - W3C: pages/resources/w3c.md
-      - Deploying to GitHub Pages: pages/resources/deployment-github.md
-      - Additional Resources: pages/resources/additional-resources.md
+      - Introduction to Microbits and variables: pages/resources/01-intro-variables.md
+      - Functions: pages/resources/02-functions.md
+      - Event Loop: pages/resources/03-event-loop.md
+      - Selection: pages/resources/04-selection-if-else-elif.md
+      - Selection in Event Loop:  pages/resources/05-selection-event-loop.md
+      - Loops and conditions:  pages/resources/06-loops.md
     - Tasks:
-      - Task 1 - Elements: pages/tasks/task-1-elements.md
-      - Task 2 - Cafe Site: pages/tasks/task-2-cafe.md
+      - Task 1 - Introduction to microbit: pages/tasks/task1
 
 # Do not touch anything below this line unless you know what you are doing.
 theme:
   name: material
   palette:
-    primary: teal
+    primary: purple
   features:
     - toc.integrate 
     - navigation.sections
@@ -38,8 +38,8 @@ plugins:
       increment_across_pages: true
       # Uncomment below if you would like to reset the table of contents numbering
       # after a certain page:
-      #restart_increment_after: 
-      # - pages/tasks/task-1-elements.md
+      restart_increment_after: 
+        -  pages/tasks/task1.md
 
 extra:
   generator: false

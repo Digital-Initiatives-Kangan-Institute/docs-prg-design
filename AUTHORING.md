@@ -27,10 +27,10 @@ All pages must be created inside of the `sites/<SITE-NAME>/docs` folder.
 ## Extended Markdown Syntax
 There is syntax that is provided by `Material` to extend Markdown with extra features.
 
-### Callouts
+**Callouts**
 A callout is an element that adds emphasis on a piece of information.
 
-#### Usage
+#**Usage**
 ```md
 # This creates a note callout
 !!! note

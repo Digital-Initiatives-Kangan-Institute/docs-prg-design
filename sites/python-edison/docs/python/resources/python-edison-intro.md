@@ -26,11 +26,11 @@ All classwork and assignments will be available via MSTeams.
 ## Downloading a simple program to the Edison
 The Edison is programmed via an editor which is found at [https://www.edpyapp.com/v3/](https://www.edpyapp.com/v3/) (use Chrome to open). 
 
-### Connect Edison to the computer using the USB cable
+**Connect Edison to the computer using the USB cable**
 Connect Edison to the computer using the USB cable attached underneath the Edison robot:
 ![Edison Plugged In](../assets/edison-plugged-50.jpg){width=512}
 
-### Upload the Python code to the Edison
+**Upload the Python code to the Edison**
 Press the ‘Program’ button in the upper right corner of the EdPy app, In the pop-up window select ‘Edison V3 – Paired’ and click ‘Connect’:
 
 ![Program Button](../assets/edpy-upload-cmp.gif)
@@ -38,10 +38,10 @@ Press the ‘Program’ button in the upper right corner of the EdPy app, In the
 ## Structure of an EdPy program
 Programming the Edison consists of two main parts. The Setup part and the Instructional code. 
 
-### Setup (Lines 1-7)
+**Setup (Lines 1-7)**
 All Edison programs must contain the setup code. The Setup section tells the Edison how it should set itself up. This means what version it is and what units it should use. For example, should it measure distance in cm or seconds. 
 
-### Instructional (Lines 8-19)
+**Instructional (Lines 8-19)**
 The instructional code is telling the Edison to do something – giving the Edison instructions to perform.  Can you make a guess at what the Edison will do from reading the code? 
 
 !!! info "Important"
