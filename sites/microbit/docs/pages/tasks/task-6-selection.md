@@ -31,18 +31,3 @@ else:
 !!! abstract "Instructions"
     Modify the code to read a number from the user using `input()` and display the corresponding image based on the value entered.
 
-## Create a Simple Game
-
-!!! abstract "Instructions"
-    Create a simple game where the user has to guess a number between 1 and 100.  Use selection to provide feedback on whether the guess is too low, too high, or correct.  The secret number is 42.
-
-## Expand the Game
-
-!!! abstract "Instructions"
-    Make the game better by using the random module to create the secret number.
-
-## Last addition
-
-!!! abstract "Instructions"
-    Add a counter to keep track of how many guesses the user has made and display it when they guess the correct number.
-
