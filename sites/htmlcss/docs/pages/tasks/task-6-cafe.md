@@ -1,4 +1,4 @@
-# Task 2 - Cafe Site
+# Task 6 - Cafe Site
 
 ## Overview
 You have been tasked with marking up a website for a local cafe. Your role is to use markup you have learned to implement the features described in the **Task Outline**.
