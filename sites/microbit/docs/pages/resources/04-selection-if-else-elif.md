@@ -207,6 +207,29 @@ Now all of a sudden our program is much more interactive!
 !!! note
     Notice that we used `int(input(...))` to convert the user's input from a string to an integer. This is necessary because the `input()` function returns a string, and we need to compare it to numbers in our conditions.  For more inforamation on this see <https://www.geeksforgeeks.org/python/convert-string-to-integer-in-python/> or ask your friendly LLM "can you explain Python datatypes and casting to me?"
 
+***
+
+## Using Loops with Buttons
+
+Loops are often used to check inputs like buttons.
+
+```python
+from microbit import *
+
+while True:
+    if button_a.is_pressed():
+        display.show(Image.YES)
+    else:
+        display.show(Image.NO)
+```
+
+**What happens?**
+
+- The program constantly checks button A
+- Shows different images depending on input
+
+***
+
 ## Class Activity
 
 Write a program that takes an input `name`.  
