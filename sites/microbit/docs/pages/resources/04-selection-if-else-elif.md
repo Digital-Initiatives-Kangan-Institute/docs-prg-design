@@ -221,6 +221,8 @@ while True:
         display.show(Image.YES)
     else:
         display.show(Image.NO)
+
+    sleep(300)
 ```
 
 **What happens?**

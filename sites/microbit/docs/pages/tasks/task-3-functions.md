@@ -54,7 +54,7 @@
 ## Drawing a Square
 
 !!! abstract "Instructions"
-    The function draw_line(position) takes a position as a parameter and draws a line on the micro:bit display in that position.  Complete the code to draw lines that over time create and square.  The square will be drawn from *top* to *left* and then all the way around to the top again.  Valid arguments/parameters for the position are: "*top*"", "*right*", "*bottom*" and "*left*".
+    The function draw_line(position) takes a position as a parameter and draws a line on the micro:bit display in that position.  Complete the code to draw lines that over time create a square.  The square will be drawn from *top* to *left* and then all the way around to the top again.  Valid arguments/parameters for the position are: "*top*", "*right*", "*bottom*" and "*left*".
 
 ??? code "click to expand"
     ```python

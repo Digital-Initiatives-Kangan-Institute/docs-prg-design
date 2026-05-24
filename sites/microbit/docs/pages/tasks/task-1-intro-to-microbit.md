@@ -28,4 +28,4 @@ Edit the code again so that the images change faster. Run and observe the result
 
 ## Use print()
 
-In addition to displaying the images on the led dissply.  Print the corresponding words (Heart and Happy) to the serial console.
+In addition to displaying the images on the LED display.  Print the corresponding words (Heart and Happy) to the serial console.

@@ -3,7 +3,7 @@
 ## Fixing Code
 
 !!! abstract "Instructions"
-    The code below doesn't quite work. Add a variable to line 4 to make it work.
+    The code below doesn't quite work. Add a variable to line 5 to make it work.
 
 ??? code "click to expand"
 
@@ -31,8 +31,8 @@
     ```python
     from microbit import *
 
-    sum1 = 9
-    sum2 = 5
+    num1 = 9
+    num2 = 5
     
     print("The sum is: " + sum)
     print("The difference is: " + difference)
@@ -45,4 +45,3 @@
 ## Display name and
 
 Using variables to set the `time`, `name`, `surname` and `age`.  Display the name and surname, then wait for the time specified, and then display the age.
-

@@ -42,7 +42,7 @@ we can also reassign values in a list by using the index number.  For example:
 
 ```python
 numbers = ["one", "two", "three", "four", "five"]
-numbers[1] = ["twenty-five"]  # This will change the list to ["one", "twenty-five", "three", "four", "five"]
+numbers[1] = "twenty-five"  # This will change the list to ["one", "twenty-five", "three", "four", "five"]
 ```
 
 !!!note
@@ -50,7 +50,7 @@ numbers[1] = ["twenty-five"]  # This will change the list to ["one", "twenty-fiv
 
 ## List functions
 
-On eof the major advantages of using a list is that they are *dynamic*.  This means that the list can increase (and decrease) in size as required.
+On of the major advantages of using a list is that they are *dynamic*.  This means that the list can increase (and decrease) in size as required.
 Lists also come with functions to enable this.
 
 - `append(item)`: Adds an item to the end of the list.
@@ -90,6 +90,7 @@ temp = temperature()
 while temp < 25:
     temperatures.append(temp)
     sleep(1000)
+    temp = temperature()
 
 print("Number of reading before temperature reached 25 degrees: " + len(temperatures))
 ```

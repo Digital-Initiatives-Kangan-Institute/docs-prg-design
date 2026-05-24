@@ -39,5 +39,4 @@ while True:
 ## print()
 
 !!! abstract "Instructions"
-    Modify the code again so that it print "Happy!" when it shows a happy face and "Sad!" when it shows a sad face. Run and check your answer.
-
+    Modify the code again so that it prints "Happy!" when it shows a happy face and "Sad!" when it shows a sad face. Run and check your answer.
