@@ -42,6 +42,7 @@
 ??? hint "Hint - Click to expand"
     *sum* is the total of num1 and num2.  It may be useful to create a variable to store the calculation.
 
-## Display name and
+## Display name and age
 
-Using variables to set the `time`, `name`, `surname` and `age`.  Display the name and surname, then wait for the time specified, and then display the age.
+!!! abstract "Instructions"
+    Using variables to set the `time`, `name`, `surname` and `age`. Display the name and surname, then wait for the time specified, and then display the age.
