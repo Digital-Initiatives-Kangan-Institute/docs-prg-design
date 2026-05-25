@@ -143,7 +143,7 @@ Line 11 shows the `left_image` arrow again, and line 13 shows the `right_image` 
 ## print()
 
 print() is a built-in function that outputs text to the console. It is commonly used for debugging and displaying information while developing code.
-You can view the result of the print() functin by opening the serial part of the microbit editor.
+You can view the result of the print() function by opening the serial part of the micro:bit editor.
 ![Serial output](../../assets/serial.png)
 
 ```python
