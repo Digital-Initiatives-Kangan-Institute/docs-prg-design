@@ -20,7 +20,7 @@ count = 0
 MAX_COUNT = 10
 
 while count < MAX_COUNT:
-    display.show(str(count))
+    display.show(count)
     sleep(500)
     count = count + 1
 
@@ -94,8 +94,6 @@ How many times will each loop run?
 
 ***
 
-**1**
-
 ```python
 count = 0
 
@@ -106,8 +104,6 @@ while count < 20:
 ```
 
 ***
-
-**2**
 
 ```python
 count = 0
@@ -120,8 +116,6 @@ while count <= 20:
 
 ***
 
-**3**
-
 ```python
 count = 1
 
@@ -133,8 +127,6 @@ while count < 20:
 
 ***
 
-**4**
-
 ```python
 count = 0
 
@@ -145,8 +137,6 @@ while count == 20:
 ```
 
 ***
-
-**5**
 
 ```python
 count = 0
@@ -174,7 +164,7 @@ MAX_COUNT = 10
 
 for count in range(MAX_COUNT):
     display.scroll(count)
-    sleep(500)
+    sleep(1000)
 
 display.clear()
 ```
@@ -206,5 +196,3 @@ for count in range(MAX_COUNT):
 
 **While loops** are best when you do not know how long the loop will run.  
 **For loops** are best when you know the number of repetitions.
-
-***

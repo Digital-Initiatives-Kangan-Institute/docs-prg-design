@@ -107,24 +107,25 @@ while True:
 
 ***
 
-## Using Loops with Buttons
+## Stopping the Loop
 
-Loops are often used to check inputs like buttons.
+An event loop runs forever, but you can stop it by using a command:  *break*
 
 ```python
 from microbit import *
 
+count = 0
+
 while True:
-    if button_a.is_pressed():
-        display.show(Image.YES)
+    count = count + 1
+    if count < 10:
+        print(count)
     else:
-        display.show(Image.NO)
+        break
 ```
 
-**What happens?**
-
-* The program constantly checks button A
-* Shows different images depending on input
+!!! note
+    In the above code, the loop will stop after counting to 10 because of the `break` statement.
 
 ***
 
