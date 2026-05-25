@@ -7,7 +7,6 @@
 !!! abstract "Instructions"
     **Using VS Code**, create a table with:
 
-    ```
     - 2 column headings
     - 2 rows of data
 
@@ -17,7 +16,7 @@
     |------|------|
     | Alex | IT |
     | Sam | Design |
-    ```
+
 
 ??? question "Hint"
     Use:
@@ -34,15 +33,8 @@
 !!! abstract "Instructions"
     **Using VS Code**, create a timetable with:
 
-    ```
-    - 3 column headings
-    - 3 rows of data
-
-    Include:
-    - a subject
-    - a room
-    - a time
-    ```
+    - 2 column headings
+    - 2 rows of data
 
 ??? question "Hint"
     The first row should usually contain heading cells using `<th>`.
@@ -54,11 +46,9 @@
 !!! abstract "Instructions"
     **Using VS Code**, create a form containing:
 
-    ```
     - an email input
     - a password input
     - a login button
-    ```
 
 ??? question "Hint"
     Use the `type` attribute to change the behaviour of each `<input>` element.
