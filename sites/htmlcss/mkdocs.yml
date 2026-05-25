@@ -11,13 +11,19 @@ nav:
     - Resources:
       - Intro to HTML: pages/resources/intro-to-html.md
       - Elements: pages/resources/elements.md
+      - Nested Elements: pages/resources/nested-elements.md
       - Attributes: pages/resources/element-attributes.md
+      - Tables and Forms: pages/resources/tables-forms.md
       - W3C: pages/resources/w3c.md
       - Deploying to GitHub Pages: pages/resources/deployment-github.md
       - Additional Resources: pages/resources/additional-resources.md
     - Tasks:
       - Task 1 - Elements: pages/tasks/task-1-elements.md
-      - Task 2 - Cafe Site: pages/tasks/task-2-cafe.md
+      - Task 2 - Nested Elements: pages/tasks/task-2-nested-elements.md
+      - Task 3 - Attributes: pages/tasks/task-3-attributes.md
+      - Task 4 - Tables and Forms: pages/tasks/task-4-tables-forms.md
+      # - Task 5 - Links and Pages: pages/tasks/task-5-links-pages.md
+      - Task 6 - Cafe Site: pages/tasks/task-6-cafe.md
 
 # Do not touch anything below this line unless you know what you are doing.
 theme:
@@ -38,8 +44,8 @@ plugins:
       increment_across_pages: true
       # Uncomment below if you would like to reset the table of contents numbering
       # after a certain page:
-      #restart_increment_after: 
-      # - pages/tasks/task-1-elements.md
+      restart_increment_after: 
+       - pages/tasks/task-1-elements.md
 
 extra:
   generator: false
