@@ -3,7 +3,7 @@
 ## Overview
 You have been tasked with marking up a website for a local cafe. Your role is to use markup you have learned to implement the features described in the **Task Outline**.
 
-[Download Site Files](../../assets/task-2-cafe-site.zip){.md-button}
+[Download Site Files](../../assets/task-6-cafe-site.zip){.md-button}
 
 ## Requirements
 - All tasks in the **Task Outline** must be completed.

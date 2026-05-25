@@ -34,16 +34,14 @@ Images are added to a webpage using the `<img>` tag.
 
 Unlike most HTML elements, the `<img>` tag does not wrap around content. Instead, it uses attributes to tell the browser which image to display and information about that image.
 
-Example:
-
-```html
-<img src="cat.jpg" alt="A cat sitting on a chair">
-```
+For example:
+<embed src="https://code.cyberbilby.com/#eyJ0aXRsZSI6IkVkaXRvciIsInBhZ2VzIjpbeyJuYW1lIjoiaW5kZXguaHRtbCIsImh0bWwiOiI8aW1nIHNyYz1cImh0dHBzOi8vY3liZXJiaWxieS5jb20vY2FweWJhcmEuanBnXCIgXG4gIGFsdD1cIkEgY2FweWJhcmFcIiBcbiAgd2lkdGg9XCIyMDBweFwiPiJ9XSwiY3NzIjoiIiwianMiOiIiLCJhY3RpdmVUYWIiOiJodG1sIiwiYWN0aXZlUGFnZSI6ImluZGV4Lmh0bWwifQ=="></embed>
 
 In this example:
 
 * `src` tells the browser where the image file is located
 * `alt` provides a text description of the image
+* `width` provides tells the image to resize to the specified pixels (width)
 
 The `alt` attribute is important because:
 
@@ -51,8 +49,21 @@ The `alt` attribute is important because:
 * it is displayed if the image cannot load
 * it helps search engines understand the image
 
-# Self-Closing Tags
+Just like **internal links**, you can use a local file name in the `src` attribute to display an image stored in the same project folder.
 
+Example:
+
+```html
+<img src="mountain.jpg" alt="A mountain range">
+```
+
+In this example:
+
+* `src="mountain.jpg"` tells the browser which image file to display
+* `alt="A mountain range"` provides a text description of the image for accessibility and cases where the image cannot load
+
+
+# Self-Closing Tags
 Most HTML elements have:
 
 * an opening tag
@@ -84,3 +95,7 @@ Other common self-closing tags include:
 ```
 
 These elements perform a specific function without containing content between opening and closing tags.
+
+### Activity - Attributes
+
+[Attempt Activity 3 - Attributes](../tasks/task-3-attributes.md){.md-button}

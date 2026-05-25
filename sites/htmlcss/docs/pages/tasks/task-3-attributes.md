@@ -15,12 +15,11 @@
 ## Images - Multiple Images
 
 !!! abstract "Instructions"
-    **Using VS Code**, create a new `gallery.html` page and add:
+    **Using VS Code**, create a new `gallery.html` page and add `4` **local** images to the page
 
-    - an image with the source `mountain.jpg`
-    - an image with the source `forest.jpg`
+    Add appropriate alt text for all images.
 
-    Add appropriate alt text for both images.
+    [Download Images](../../assets/task-3-attributes-food.zip){.md-button}
 
 ??? question "Hint"
     The `alt` attribute should describe the image content in a short sentence.
