@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Initiatives Portal</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-color: rgb(245, 245, 245);
+
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+
+            gap: 1rem;
+
+            padding: 2rem;
+        }
+
+        footer {
+            padding: 1rem;
+
+            color: rgb(170, 170, 170);
+            background-color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            font-weight: normal;
+            color: rgb(60, 60, 60);
+        }
+
+        #banner {
+            background-color: white;
+            padding: 1rem;
+
+            border: 1px solid rgb(198, 198, 198);
+            border-radius: 10px;
+
+            box-shadow: rgba(0, 0, 0, 0.214) 0 2px 2px;
+
+            font-size: 1.25rem;
+        }
+
+        .grid-layout {
+            display: grid;
+
+            flex-wrap: wrap;
+
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            
+            position: relative;
+
+            border: 1px solid rgb(198, 198, 198);
+            border-radius: 10px;
+
+            box-shadow: rgba(0, 0, 0, 0.214) 0 2px 2px;
+
+            transition: transform 0.25s !important;
+        }
+        .grid-item:hover {
+            transform: scale(102%);
+        }
+
+        .construction::before {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            border-radius: 10px;
+
+            opacity: 0.25;
+
+            content: '';
+
+            background: repeating-linear-gradient(
+                45deg,
+                rgb(255, 166, 0),
+                rgb(255, 166, 0) 10px,
+                black 10px,
+                black 20px
+            );
+        }
+        .construction::after {
+            position: absolute;
+
+            top: 50%;
+            left: 0;
+            width: 100%;
+
+            content: 'Under Construction';
+            text-align: center;
+
+            text-shadow: black 1px 1px 1px;
+            font-size: 1.25rem;
+
+            color: white;
+
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        .grid-item img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            max-height: 100px;
+            width: 100%;
+
+            object-fit: cover;
+        }
+
+        .grid-item .details {
+            flex: 1;
+
+            color: black;
+            background-color: white;
+            padding: 1rem;
+
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .grid-item .details h2 {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .grid-layout {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .grid-layout {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Digital Initiatives Portal</h1>
+
+        <div id="banner">
+            <p>Welcome to the Digital Initiatives portal. Click on any of the cards below to open a site and bookmark this page for easy access to these pages.</p>
+            <p>New pages will appear here as they become available.</p>
+        </div>
+
+        <h2>Sites</h2>
+
+        <div class="grid-layout">
+            <a class="grid-item" href="/python-edison">
+                <div class="thumbnail">
+                    <img src="./_assets/edison-plugged-50.jpg" />
+                </div>
+
+                <div class="details">
+                    <h2>Python - Edison</h2>
+                    <p>Introduction to Python programming through structured, hands-on activities using the Edison robot.</p>
+                </div>
+            </a>
+
+            <a class="grid-item" href="/design">
+                <div class="thumbnail">
+                    <img src="./_assets/tinkercad-buttonbox.png" />
+                </div>
+
+                <div class="details">
+                    <h2>Design Thinking</h2>
+                    <p>Explore human-centered design principles, ideation, techniques, and the end-to-end design process.</p>
+                </div>
+            </a>
+
+            <a class="grid-item" href="/htmlcss">
+                <div class="thumbnail">
+                    <img src="./_assets/build-simple-webpages.png" />
+                </div>
+
+                <div class="details">
+                    <h2>Build Simple Webpages</h2>
+                    <p>Introduction to HTML focused through building, editing, and linking webpages into a complete website.</p>
+                </div>
+            </a>
+
+            <a class="grid-item" href="/microbit">
+                <div class="thumbnail">
+                    <img src="./_assets/microbit.png" />
+                </div>
+
+                <div class="details">
+                    <h2>Micro:bit</h2>
+                    <p>Introduction to Programming via Python and Micro:bits</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        Digital Initiatives - Bendigo Kangan Institute
+    </footer>
+</body>
+</html>
