@@ -30,4 +30,4 @@ for i in range(3):
 ## secret number game
 
 !!! abstract "Instructions"
-    Upgrade the game from the previous task.  Use a for loop to control the amount of guesses a player has before they lose the game (max of 10).  At the end of a game it will print whether the user has won or failed and the amopunt of attempt that they used.
+    Upgrade the game from the previous task.  Use a for loop to control the amount of guesses a player has before they lose the game (max of 10).  At the end of a game it will print whether the user has won or failed and the number of attempts that they used.
