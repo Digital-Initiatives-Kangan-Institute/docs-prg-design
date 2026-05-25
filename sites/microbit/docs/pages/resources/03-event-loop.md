@@ -113,7 +113,6 @@ An event loop runs forever, but you can stop it by using a command:  *break*
 
 ```python
 from microbit import *
-import music
 
 count = 0
 
