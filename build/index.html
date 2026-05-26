@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Initiatives Portal</title>
+    <title>Digital Initiatives - Portal</title>
 
     <style>
         body {
@@ -18,6 +18,15 @@
             min-height: 100vh;
         }
 
+        header {
+            color: #edab0c;
+
+            background-color: black;
+            padding: 0 2rem;
+
+            box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
+        }
+
         main {
             flex: 1;
 
@@ -26,7 +35,7 @@
 
             gap: 1rem;
 
-            padding: 2rem;
+            padding: 2rem 15rem;
         }
 
         footer {
@@ -34,27 +43,42 @@
 
             color: rgb(170, 170, 170);
             background-color: black;
+
+            box-shadow: rgba(0, 0, 0, 0.25) 0 -2px 5px;
         }
 
         a {
             text-decoration: none;
         }
 
-        h1, h2 {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
             font-weight: normal;
             color: rgb(60, 60, 60);
         }
 
         #banner {
+            display: flex;
+            flex-direction: column;
+
+            gap: 1rem;
+
             background-color: white;
-            padding: 1rem;
+            padding: 1.5rem;
 
             border: 1px solid rgb(198, 198, 198);
             border-radius: 10px;
 
             box-shadow: rgba(0, 0, 0, 0.214) 0 2px 2px;
 
-            font-size: 1.25rem;
+            font-size: 1.1rem;
+        }
+
+        #banner p {
+            margin: 0;
         }
 
         .grid-layout {
@@ -152,11 +176,19 @@
             .grid-layout {
                 grid-template-columns: 1fr 1fr 1fr;
             }
+
+            main {
+                padding: 2rem 10rem;
+            }
         }
 
         @media screen and (max-width: 1000px) {
             .grid-layout {
                 grid-template-columns: 1fr 1fr;
+            }
+
+            main {
+                padding: 2rem 5rem;
             }
         }
 
@@ -164,65 +196,73 @@
             .grid-layout {
                 grid-template-columns: 1fr;
             }
+
+            main {
+                padding: 2rem 2rem;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Digital Initiatives - Portal</h1>
+    </header>
+
     <main>
-        <h1>Digital Initiatives Portal</h1>
-
         <div id="banner">
-            <p>Welcome to the Digital Initiatives portal. Click on any of the cards below to open a site and bookmark this page for easy access to these pages.</p>
-            <p>New pages will appear here as they become available.</p>
+            <p>Welcome to the <b>Digital Initiatives</b> learning portal.</p>
+            <p><b>Click</b> on any of the cards below to open a site, and <b>bookmark</b> this page for easy access to these pages.</p>
         </div>
 
-        <h2>Sites</h2>
-
-        <div class="grid-layout">
-            <a class="grid-item" href="/python-edison">
-                <div class="thumbnail">
-                    <img src="./_assets/edison-plugged-50.jpg" />
-                </div>
-
-                <div class="details">
-                    <h2>Python - Edison</h2>
-                    <p>Introduction to Python programming through structured, hands-on activities using the Edison robot.</p>
-                </div>
-            </a>
-
-            <a class="grid-item" href="/design">
-                <div class="thumbnail">
-                    <img src="./_assets/tinkercad-buttonbox.png" />
-                </div>
-
-                <div class="details">
-                    <h2>Design Thinking</h2>
-                    <p>Explore human-centered design principles, ideation, techniques, and the end-to-end design process.</p>
-                </div>
-            </a>
-
-            <a class="grid-item" href="/htmlcss">
-                <div class="thumbnail">
-                    <img src="./_assets/build-simple-webpages.png" />
-                </div>
-
-                <div class="details">
-                    <h2>Build Simple Webpages</h2>
-                    <p>Introduction to HTML focused through building, editing, and linking webpages into a complete website.</p>
-                </div>
-            </a>
-
-            <a class="grid-item" href="/microbit">
-                <div class="thumbnail">
-                    <img src="./_assets/microbit.png" />
-                </div>
-
-                <div class="details">
-                    <h2>Micro:bit</h2>
-                    <p>Introduction to Programming via Python and Micro:bits</p>
-                </div>
-            </a>
-        </div>
+        <section>
+            <h2>Sites</h2>
+    
+            <div class="grid-layout">
+                <a class="grid-item" href="/python-edison">
+                    <div class="thumbnail">
+                        <img src="./_assets/edison-plugged-50.jpg" />
+                    </div>
+    
+                    <div class="details">
+                        <h2>Python - Edison</h2>
+                        <p>Introduction to Python programming through structured, hands-on activities using the Edison robot.</p>
+                    </div>
+                </a>
+    
+                <a class="grid-item" href="/design">
+                    <div class="thumbnail">
+                        <img src="./_assets/tinkercad-buttonbox.png" />
+                    </div>
+    
+                    <div class="details">
+                        <h2>Design Thinking</h2>
+                        <p>Explore human-centered design principles, ideation, techniques, and the end-to-end design process.</p>
+                    </div>
+                </a>
+    
+                <a class="grid-item" href="/htmlcss">
+                    <div class="thumbnail">
+                        <img src="./_assets/build-simple-webpages.png" />
+                    </div>
+    
+                    <div class="details">
+                        <h2>Build Simple Webpages</h2>
+                        <p>Introduction to HTML focused through building, editing, and linking webpages into a complete website.</p>
+                    </div>
+                </a>
+    
+                <a class="grid-item" href="/microbit">
+                    <div class="thumbnail">
+                        <img src="./_assets/microbit.png" />
+                    </div>
+    
+                    <div class="details">
+                        <h2>Micro:bit</h2>
+                        <p>Introduction to Programming via Python and Micro:bits</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
