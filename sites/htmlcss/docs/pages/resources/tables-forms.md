@@ -53,7 +53,7 @@ The `type` attribute changes the behaviour of an input element.
 
 Example:
 
-```html id="n8e7xv"
+```html
 <input type="text">
 <input type="email">
 <input type="password">
