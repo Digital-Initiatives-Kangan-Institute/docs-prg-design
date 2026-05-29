@@ -61,6 +61,7 @@ You need to give your repository a name and enable the `Add README` option.
 
 ## Uploading Site Files {.notice-me}
 **Instructions**
+
 1. Click the `Add file` button
 
     ??? question "Preview Image - Click to view"
@@ -92,6 +93,7 @@ Select any `index.html` and other `html` files you created in a previous activit
 
 ## Deploying to GitHub Pages {.notice-me}
 **Instructions**
+
 1. Click on the `Settings` tab in the navigation bar
 
     ??? question "Preview Image - Click to view"
@@ -119,6 +121,7 @@ Select any `index.html` and other `html` files you created in a previous activit
 
 ## Viewing your Deployed Website {.notice-me}
 **Instructions**
+
 1. Click on the `Actions` tab in the navigation bar
 
     ??? question "Preview Image - Click to view"
